@@ -7,6 +7,7 @@ interface Props {
 }
 const { title, description = "Judit Bekker – Data Visualization Designer & 2x Tableau Zen Master based in Berlin." } = Astro.props;
 const currentPath = Astro.url.pathname;
+const base = import.meta.env.BASE_URL;
 ---
 <!doctype html>
 <html lang="en">
@@ -15,15 +16,15 @@ const currentPath = Astro.url.pathname;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     <title>{title}</title>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
         <nav class="site-nav">
-          <a href="/" class:list={["nav-link", { active: currentPath === "/" }]}>Portfolio</a>
-          <a href="/about-me" class:list={["nav-link", { active: currentPath.startsWith("/about") }]}>About me</a>
-          <a href="/blog" class:list={["nav-link", { active: currentPath.startsWith("/blog") }]}>Blog</a>
+          <a href={base} class:list={["nav-link", { active: currentPath === base || currentPath === base + "/" }]}>Portfolio</a>
+          <a href={`${base}about-me`} class:list={["nav-link", { active: currentPath.includes("/about") }]}>About me</a>
+          <a href={`${base}blog`} class:list={["nav-link", { active: currentPath.includes("/blog") }]}>Blog</a>
         </nav>
       </div>
     </header>

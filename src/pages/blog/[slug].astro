@@ -12,6 +12,7 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await render(post);
+const base = import.meta.env.BASE_URL;
 
 function formatDate(dateStr: string) {
   return new Date(dateStr).toLocaleDateString('en-US', {
@@ -24,7 +25,7 @@ function formatDate(dateStr: string) {
   <article class="post">
     <div class="container">
       <header class="post-header">
-        <a href="/blog" class="back-link">← Blog</a>
+        <a href={`${base}blog`} class="back-link">← Blog</a>
         <h1 class="post-title">{post.data.title}</h1>
         <div class="post-meta">
           <span>Judit Bekker</span>
@@ -38,7 +39,7 @@ function formatDate(dateStr: string) {
       </div>
 
       <footer class="post-footer">
-        <a href="/blog" class="back-link">← Back to Blog</a>
+        <a href={`${base}blog`} class="back-link">← Back to Blog</a>
       </footer>
     </div>
   </article>

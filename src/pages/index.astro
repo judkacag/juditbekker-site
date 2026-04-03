@@ -40,7 +40,7 @@ import Layout from '../layouts/Layout.astro';
         <p class="hero-bio">welcome to my website! I'm Judit Bekker, and I'm happy to have you here. I've been working as a Data Visualization Designer and Analyst for 15 years, and I'm obsessed with all things data. Whether I'm finding new ways to visualize complex information or digging into data to uncover insights, I'm always up to something. I tend to choose topics that need unique datasets, and if I'm married to an idea I don't mind spending a month working on a viz. Spoiler alert: I once counted all the damn fine coffees that were consumed in Twin Peaks, and those 50 hours flew by faster than a coffee gets cold.</p>
         <p class="hero-bio">When I'm not working, you can catch me doodling on photos, coming up with new hobbies, or running away from my arch enemies: pigeons. I'm excited to share my projects and knowledge with you on this new website where I can finally embrace my everlasting love for my favourite font: Futura!</p>
         <div class="hero-ctas">
-          <a href="/about-me" class="btn-link">More About Me</a>
+          <a href={`${import.meta.env.BASE_URL}about-me`} class="btn-link">More About Me</a>
           <a href="#portfolio" class="btn-link">My Portfolio</a>
         </div>
       </div>
@@ -60,7 +60,7 @@ import Layout from '../layouts/Layout.astro';
           <img src={`${import.meta.env.BASE_URL}images/portfolio/beer-hiking.png`} alt="Beer hiking in Berlin" />
         </a>
         <a href="https://public.tableau.com/app/profile/judit.bekker/viz/Mostfamouscomposersofthe20thcentury/Composersofthe20thcentury" target="_blank" rel="noopener" class="portfolio-item">
-          <img src={`${import.meta.env.BASE_URL}images/portfolio/composers.jpg`} alt="Most famous composers of the 20th century" />
+          <img src={`${import.meta.env.BASE_URL}images/portfolio/composers.png`} alt="Most famous composers of the 20th century" />
         </a>
         <a href="https://www.behance.net/gallery/115499067/Whats-in-the-bag" target="_blank" rel="noopener" class="portfolio-item">
           <img src={`${import.meta.env.BASE_URL}images/portfolio/what-s-in-the-bag.png`} alt="What's in the bag?" />
@@ -69,7 +69,7 @@ import Layout from '../layouts/Layout.astro';
           <img src={`${import.meta.env.BASE_URL}images/portfolio/fire-walk-with-me.png`} alt="Fire Walk With Me" />
         </a>
         <a href="https://public.tableau.com/app/profile/judit.bekker/viz/Thehistoryofmodernphotography/Historyofmodernphotography" target="_blank" rel="noopener" class="portfolio-item">
-          <img src={`${import.meta.env.BASE_URL}images/portfolio/kodak.jpg`} alt="The History of Modern Photography" />
+          <img src={`${import.meta.env.BASE_URL}images/portfolio/kodak.png`} alt="The History of Modern Photography" />
         </a>
         <a href="https://public.tableau.com/app/profile/judit.bekker/viz/WildatHeart/WildatHeart" target="_blank" rel="noopener" class="portfolio-item">
           <img src={`${import.meta.env.BASE_URL}images/portfolio/wild-at-heart.png`} alt="Wild at Heart" />
@@ -81,7 +81,7 @@ import Layout from '../layouts/Layout.astro';
           <img src={`${import.meta.env.BASE_URL}images/portfolio/amy-adams.png`} alt="Amy Adams Career" />
         </a>
         <a href="https://www.behance.net/gallery/169433427/Largest-lakes-around-Berlin" target="_blank" rel="noopener" class="portfolio-item">
-          <img src={`${import.meta.env.BASE_URL}images/portfolio/lakes-of-berlin.jpg`} alt="Lakes of Berlin" />
+          <img src={`${import.meta.env.BASE_URL}images/portfolio/lakes-of-berlin.png`} alt="Lakes of Berlin" />
         </a>
         <a href="https://public.tableau.com/app/profile/judit.bekker/viz/IcelandTheLandofFireandIce/IcelandThelandoffireandice" target="_blank" rel="noopener" class="portfolio-item">
           <img src={`${import.meta.env.BASE_URL}images/portfolio/iceland.png`} alt="The Land of Ice and Fire" />
@@ -90,7 +90,7 @@ import Layout from '../layouts/Layout.astro';
           <img src={`${import.meta.env.BASE_URL}images/portfolio/moon-phases.png`} alt="Moon Phases 2020" />
         </a>
         <a href="https://public.tableau.com/app/profile/judit.bekker/viz/EasternBloc-StalinistArchitecture/Eastern_bloc" target="_blank" rel="noopener" class="portfolio-item">
-          <img src={`${import.meta.env.BASE_URL}images/portfolio/eastern-bloc.jpg`} alt="Eastern Bloc" />
+          <img src={`${import.meta.env.BASE_URL}images/portfolio/eastern-bloc.png`} alt="Eastern Bloc" />
         </a>
         <a href="https://public.tableau.com/app/profile/judit.bekker/viz/infinite_jest/InfiniteJest" target="_blank" rel="noopener" class="portfolio-item">
           <img src={`${import.meta.env.BASE_URL}images/portfolio/infinite-jest.png`} alt="Infinite Jest" />
@@ -229,15 +229,19 @@ import Layout from '../layouts/Layout.astro';
   }
 
   .portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 20px;
+    columns: 3;
+    column-gap: 20px;
+  }
+
+  .portfolio-item {
+    break-inside: avoid;
+    display: block;
+    margin-bottom: 20px;
   }
 
   .portfolio-item img {
     width: 100%;
-    aspect-ratio: 4/3;
-    object-fit: cover;
+    display: block;
     transition: opacity 0.2s;
     border: 1px solid var(--color-border);
   }
@@ -259,6 +263,12 @@ import Layout from '../layouts/Layout.astro';
     font-size: 0.8rem;
   }
 
+  @media (max-width: 900px) {
+    .portfolio-grid {
+      columns: 2;
+    }
+  }
+
   @media (max-width: 768px) {
     .hero-inner {
       grid-template-columns: 1fr;
@@ -268,6 +278,10 @@ import Layout from '../layouts/Layout.astro';
     .hero-photo-wrap {
       width: 160px;
       height: 160px;
+    }
+
+    .portfolio-grid {
+      columns: 1;
     }
   }
 </style>

@@ -1,0 +1,90 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+const { title, description = "Judit Bekker – Data Visualization Designer & 2x Tableau Zen Master based in Berlin." } = Astro.props;
+const currentPath = Astro.url.pathname;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <nav class="site-nav">
+          <a href="/" class:list={["nav-link", { active: currentPath === "/" }]}>Portfolio</a>
+          <a href="/about-me" class:list={["nav-link", { active: currentPath.startsWith("/about") }]}>About me</a>
+          <a href="/blog" class:list={["nav-link", { active: currentPath.startsWith("/blog") }]}>Blog</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© {new Date().getFullYear()} Judit Bekker</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+    z-index: 100;
+    height: var(--nav-height);
+  }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .site-nav {
+    display: flex;
+    gap: 36px;
+  }
+
+  .nav-link {
+    font-family: var(--font-main);
+    font-size: 0.85rem;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    color: var(--color-muted);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+    color: var(--color-text);
+    text-decoration: none;
+  }
+
+  .site-footer {
+    border-top: 1px solid var(--color-border);
+    padding: 32px 0;
+    margin-top: 80px;
+  }
+
+  .footer-inner {
+    font-size: 0.8rem;
+    color: var(--color-muted);
+  }
+</style>

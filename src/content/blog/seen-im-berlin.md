@@ -1,0 +1,11 @@
+---
+title: "Seen im Berlin"
+date: "2023-04-28"
+url: "https://www.juditbekker.com/post/seen-im-berlin"
+---
+
+A few weeks ago, I saw an infographic in the Berliner Morgenpost about the cherry blossoms near the city, and I felt a tinge of jealousy that someone was getting paid to do such nice things at a DAILY NEWSPAPER. And it gives me the impression that there’s a demand for it to enrich articles with quality charts and maps. I haven’t done any dataviz projects in the past year cause I was spending a lot of time just enjoying life (like traveling, learning a new language, or deep diving into analog photography). But when I saw the map in the newspaper, I wanted to create something again that feels close to where I am now and applies a technique that I haven’t used before.
+
+When I envisioned this idea during a Tech Stack review, Federica Fragapane’s work was the first thing that popped into my mind, but I only realized now that she also did a similar visualization about lakes. Nevertheless, I hope I succeeded in achieving something that looks very ‘me’ in the end. I created the whole project in Illustrator because that’s the tool that allows for the most creative freedom. You can check out the full size version on Béhance.
+
+I HOPEFULLY managed to collect all the lakes over one square-kilometer surface area, but as I dug deeper into the topic, it started to seem like an impossible task. It turned out that there are more than 3000 lakes around Berlin, so after my first initial Google search proved incomplete, I looked closely at Google Maps and tried to identify the biggest lakes by eye. The idea was to draw the outlines of the lakes, multiply them based on how deep they are and make their size proportionally smaller inside. Something similar to the shape of a horn. I haven’t changed the direction of the lakes: they are placed on the canvas as you’d see them on the map. The circles represent the surface area of the lakes, and the arrows show the direction from Berlin central. On the right side you can check their elevation from sea level. Some have concave, some convex forms, so they make interesting shapes with the narrowing outlines, and seem unique. They look like the drawings we made with the spirograph when we were kids back in the 90s. You know what? I’ll baptise this the spirograph chart!

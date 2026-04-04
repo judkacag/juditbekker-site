@@ -131,11 +131,9 @@ const portfolioItems = [
   <section class="hero">
     <div class="container hero-inner">
 
-      <!-- Left: photo + meta -->
+      <!-- Left: photo + meta (gradient covers whole column) -->
       <div class="hero-left">
-        <div class="photo-bg">
-          <img src={`${base}images/judit-portrait.jpg`} alt="Judit Bekker" class="hero-photo" />
-        </div>
+        <img src={`${base}images/judit-portrait.jpg`} alt="Judit Bekker" class="hero-photo" />
         <div class="hero-meta">
           <strong class="hero-name">Judit Bekker</strong>
           <span class="hero-title">Data Visualization Designer</span>
@@ -259,25 +257,23 @@ const portfolioItems = [
   .hero-inner {
     display: flex;
     gap: 56px;
-    align-items: flex-start;
+    align-items: stretch;
   }
 
-  /* Left column: photo + meta */
+  /* Left column: gradient covers whole box */
   .hero-left {
     flex: 0 0 300px;
-    animation: slideLeft 0.65s ease both;
-  }
-
-  .photo-bg {
     background: linear-gradient(180deg, rgba(250,212,189,0.75) 0%, #ffffff 100%);
-    padding: 24px 16px 0;
-    margin-bottom: 20px;
-    overflow: hidden;
+    padding: 28px 20px 32px;
+    display: flex;
+    flex-direction: column;
+    animation: slideLeft 0.65s ease both;
   }
 
   .hero-photo {
     width: 100%;
     display: block;
+    margin-bottom: 20px;
   }
 
   .hero-meta {
@@ -363,8 +359,8 @@ const portfolioItems = [
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 18px;
-    padding-top: 12px;
+    justify-content: center;
+    gap: 20px;
     animation: slideRight 0.65s ease 0.15s both;
   }
 
@@ -447,7 +443,7 @@ const portfolioItems = [
   .portfolio-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(220, 156, 121, 0.93);
+    background: linear-gradient(180deg, rgba(250,212,189,0.95) 0%, rgba(255,255,255,0.97) 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -461,7 +457,7 @@ const portfolioItems = [
   }
 
   .overlay-title {
-    color: #ffffff;
+    color: #363636;
     font-size: 1rem;
     font-weight: 700;
     margin-bottom: 10px;
@@ -469,7 +465,7 @@ const portfolioItems = [
   }
 
   .overlay-desc {
-    color: rgba(255, 255, 255, 0.82);
+    color: #363636;
     font-size: 0.78rem;
     line-height: 1.65;
     margin: 0;

@@ -107,6 +107,10 @@ const base = import.meta.env.BASE_URL;
     padding: 40px 0 80px;
   }
 
+  .page-bg .container {
+    max-width: 900px;
+  }
+
   /* ── Hero card ───────────────────────────────────────────────── */
   .hero-card {
     background: #ffffff;
@@ -133,7 +137,7 @@ const base = import.meta.env.BASE_URL;
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 52px 52px 40px;
+    padding: 40px 44px 32px;
   }
 
   .hello-heading {
@@ -157,7 +161,7 @@ const base = import.meta.env.BASE_URL;
     margin-top: auto;
     display: flex;
     justify-content: flex-end;
-    gap: 20px;
+    gap: 12px;
     padding-top: 32px;
   }
 
@@ -173,8 +177,8 @@ const base = import.meta.env.BASE_URL;
   }
 
   .hero-social img {
-    width: 26px;
-    height: 26px;
+    width: 30px;
+    height: 30px;
     object-fit: contain;
     display: block;
   }
@@ -182,7 +186,7 @@ const base = import.meta.env.BASE_URL;
   /* ── Content card ────────────────────────────────────────────── */
   .content-card {
     background: #ffffff;
-    padding: 0 56px;
+    padding: 0 44px;
   }
 
   .content-section {
@@ -254,13 +258,13 @@ const base = import.meta.env.BASE_URL;
   @media (max-width: 900px) {
     .hero-card { flex-direction: column; }
     .hero-photo-col { flex: none; max-height: 380px; }
-    .hero-content-col { padding: 36px; }
+    .hero-content-col { padding: 32px; }
     .hero-social { justify-content: flex-start; }
-    .content-card { padding: 0 36px; }
+    .content-card { padding: 0 32px; }
   }
 
   @media (max-width: 600px) {
-    .hero-content-col { padding: 28px; }
-    .content-card { padding: 0 24px; }
+    .hero-content-col { padding: 24px; }
+    .content-card { padding: 0 20px; }
   }
 </style>

@@ -281,21 +281,22 @@ const portfolioItems = [
     flex-direction: column;
     gap: 6px;
     color: #363636;
+    padding-left: 24px;
   }
 
   .hero-name {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 700;
     line-height: 1.2;
   }
 
   .hero-title {
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 400;
   }
 
   .hero-detail {
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 400;
   }
 
@@ -320,6 +321,7 @@ const portfolioItems = [
     letter-spacing: 0.01em;
     line-height: 1;
     margin-bottom: 28px;
+    max-width: 520px;
   }
 
   .hero-bio {
@@ -327,6 +329,8 @@ const portfolioItems = [
     line-height: 1.75;
     margin-bottom: 16px;
     color: var(--color-text);
+    text-align: justify;
+    max-width: 520px;
   }
 
   .hero-ctas {
@@ -386,6 +390,8 @@ const portfolioItems = [
     height: 28px;
     object-fit: contain;
     display: block;
+    /* tint PNG icons to #363636 */
+    filter: brightness(0) invert(0.21);
   }
 
   /* ── Animations ──────────────────────────────────────────────── */

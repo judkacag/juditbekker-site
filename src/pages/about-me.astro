@@ -10,7 +10,7 @@ const base = import.meta.env.BASE_URL;
       <!-- Hero card -->
       <div class="hero-card">
         <div class="hero-photo-col">
-          <img src={`${base}images/judit-about.jpg`} alt="Judit Bekker" class="hero-photo" />
+          <img src={`${base}images/judit-about.png`} alt="Judit Bekker" class="hero-photo" />
         </div>
         <div class="hero-content-col">
           <h1 class="hello-heading">HELLO,</h1>
@@ -120,27 +120,14 @@ const base = import.meta.env.BASE_URL;
   }
 
   .hero-photo-col {
-    flex: 0 0 44%;
+    flex: 0 0 auto;
     overflow: hidden;
-    position: relative;
-  }
-
-  .hero-photo-col::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 3px;
-    height: 3px;
     background: #ffffff;
-    z-index: 1;
   }
 
   .hero-photo {
-    width: 100%;
     height: 100%;
-    object-fit: contain;
-    object-position: bottom center;
+    width: auto;
     display: block;
   }
 

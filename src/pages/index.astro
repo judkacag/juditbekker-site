@@ -1,14 +1,140 @@
 ---
 import Layout from '../layouts/Layout.astro';
+const base = import.meta.env.BASE_URL;
+
+const portfolioItems = [
+  {
+    key: 'twin-peaks',
+    title: 'The Coffees of Twin Peaks',
+    image: 'twin-peaks.png',
+    link: 'https://public.tableau.com/app/profile/judit.bekker/viz/TheCoffeesofTwinPeaks/TheCoffeesofTwinPeaks',
+    description: 'Welcome to The Coffees of Twin Peaks! This fun visualization project showcases the 258 cups of coffee that were consumed throughout the Twin Peaks series. It took an insane amount of time to count them all, given that the show is approximately 40 hours long. So grab a cup of joe and explore the coffee-filled world of Twin Peaks!',
+  },
+  {
+    key: 'beer-hiking',
+    title: 'Beer Hiking in Berlin',
+    image: 'beer-hiking.png',
+    link: 'https://public.tableau.com/app/profile/judit.bekker/viz/BeerhikinginBerlin/bierwandern',
+    description: 'Introducing Beer Hiking in Berlin, a complex dataviz project that highlights 33 unique hiking routes around the city, all of which conclude at a local brewery. These routes, inspired by the book of the same name, cater to hikers of all experience levels and time constraints, offering a diverse range of options for locals and tourists alike.',
+  },
+  {
+    key: 'composers',
+    title: 'Most Famous Composers of the 20th Century',
+    image: 'composers.png',
+    link: 'https://public.tableau.com/app/profile/judit.bekker/viz/Mostfamouscomposersofthe20thcentury/Composersofthe20thcentury',
+    description: 'During the early 20th century, many composers experimented with rhythm, gained inspiration from folk music and assessed their views on tonality. These experimentations baffled listeners, and composers either received support or were rejected by their audience. This resulted in a shift in how music was composed and performed.',
+  },
+  {
+    key: 'what-s-in-the-bag',
+    title: "What's in the Bag?",
+    image: 'what-s-in-the-bag.png',
+    link: 'https://www.behance.net/gallery/115499067/Whats-in-the-bag',
+    description: 'The share of income spent on groceries is an established indicator of household food security. In 2019 in Hungary the ratio of food and non-alcoholic beverages took up a quarter of all earnings, while the EU average was below 15%. Explore this experimental infographic to see what an average Hungarian spends their income on.',
+  },
+  {
+    key: 'wild-at-heart',
+    title: 'Wild at Heart',
+    image: 'wild-at-heart.png',
+    link: 'https://public.tableau.com/app/profile/judit.bekker/viz/WildatHeart/WildatHeart',
+    description: 'Wild at Heart is a data visualization piece that explores the film of the same name by David Lynch. I counted the number of cigarettes smoked, instances of lovemaking, and singing by the main characters throughout the film. The viz was recreated three times in different tools: Tableau, Adobe Illustrator, and p5.js.',
+  },
+  {
+    key: 'kodak',
+    title: 'The History of Modern Photography',
+    image: 'kodak.png',
+    link: 'https://public.tableau.com/app/profile/judit.bekker/viz/Thehistoryofmodernphotography/Historyofmodernphotography',
+    description: 'Small visuals, a lot of everything else. This work has only two charts on the canvas, and everything else is centered around layout design. I saved this photo from Alexander Andrews to my favourites on Pexels months ago before I found the most suitable font to tell a story.',
+  },
+  {
+    key: 'fire-walk-with-me',
+    title: 'Fire Walk With Me',
+    image: 'fire-walk-with-me.png',
+    link: 'https://public.tableau.com/app/profile/judit.bekker/viz/setmymindonFIRE/Firewalkwithme',
+    description: 'In 2020 I watched 645 hours of movies and series. Yes, that equals 27 days and it\'s almost as long as February. 73% of this time I spent watching series – 660 episodes of 62 different ones. My main platform was Netflix (270 hours), closely followed by HBO GO (250 hours), while I only went to the movies 3 times due to the lockdown.',
+  },
+  {
+    key: 'lakes-of-berlin',
+    title: 'Largest Lakes around Berlin',
+    image: 'lakes-of-berlin.png',
+    link: 'https://www.behance.net/gallery/169433427/Largest-lakes-around-Berlin',
+    description: 'The Lakes of Berlin project is a static visualization that showcases the largest lakes around Berlin. This infographic allows viewers to see the size, depth, and location of each lake compared to the city center. A lot of lines were drawn to complete this viz, but it was a fun and relaxing activity!',
+  },
+  {
+    key: 'amy-adams',
+    title: 'Amy Adams Career',
+    image: 'amy-adams.png',
+    link: 'https://www.behance.net/gallery/122698727/Amy-Adams-movies',
+    description: 'This dataviz project showcases an in-depth infographic detailing the career of Amy Adams from 2006 to 2019. Created using Adobe Illustrator, the project used data from IMDb and Rotten Tomatoes.',
+  },
+  {
+    key: 'severance',
+    title: 'Please Enjoy Each Fact Equally',
+    image: 'severance.png',
+    link: 'https://public.tableau.com/app/profile/judit.bekker/viz/SeverancePleaseenjoyeachfactequally/Ahandshakeisavailableuponrequest',
+    description: 'I hope Mr. Milchick will organize an Egg Bar Social, and a handshake will be available upon request after completing the Severance file. Macrodata Refinement has reached quota by the end of the quarter, and that gantt chart did bend after all!',
+  },
+  {
+    key: 'iceland',
+    title: 'The Land of Ice and Fire',
+    image: 'iceland.png',
+    link: 'https://public.tableau.com/app/profile/judit.bekker/viz/IcelandTheLandofFireandIce/IcelandThelandoffireandice',
+    description: 'Iceland has a unique landscape with its completely unmatched rugged nature. On an island only 103,000 km² in size, there is a large number of volcanoes, glaciers, black sand beaches, waterfalls, and craters — making it a nature lover\'s paradise. In this viz I chose to visualize all the active volcanoes of Iceland in Mapbox Studio.',
+  },
+  {
+    key: 'moon-phases',
+    title: 'Moon Phases 2020',
+    image: 'moon-phases.png',
+    link: 'https://public.tableau.com/app/profile/judit.bekker/viz/moonpalace/Moonphases2020',
+    description: 'The 2020 Lunar calendar project was a rapid visualization idea when I was in-between projects and had some idle time on my hands. This is a very simple viz about the changing phases of the Moon that still stands close to my heart.',
+  },
+  {
+    key: 'eastern-bloc',
+    title: 'Eastern Bloc',
+    image: 'eastern-bloc.png',
+    link: 'https://public.tableau.com/app/profile/judit.bekker/viz/EasternBloc-StalinistArchitecture/Eastern_bloc',
+    description: 'This was one of those many design-driven vizzes where I knew how the end result should look like, just needed to find the data that fits my story. I grew up in one of these panel houses in Hungary, and wouldn\'t trade those years for anything.',
+  },
+  {
+    key: 'infinite-jest',
+    title: 'Infinite Jest',
+    image: 'infinite-jest.png',
+    link: 'https://public.tableau.com/app/profile/judit.bekker/viz/infinite_jest/InfiniteJest',
+    description: 'Infinite Jest is the thickest and most complicated reads of my life so far — 1100 pages in a very big format written in 8pt font size. But hey, I like literary challenges! This viz was a true love project.',
+  },
+  {
+    key: 'woody-allen',
+    title: "Woody Allen's Filmography",
+    image: 'woody-allen.png',
+    link: 'https://public.tableau.com/app/profile/judit.bekker/viz/WoodyAllenTheManfromNewYork/WoodyAllen',
+    description: 'He was as tough and romantic as the city he loved. Behind his black-rimmed glasses was the coiled sexual power of a jungle cat. New York was his town and it always would be. Between 1966 and 2019 Woody Allen has made a film almost every year.',
+  },
+  {
+    key: 'my-fallen-kingdom',
+    title: 'My Fallen Kingdom – A Quarantine Project',
+    image: 'my-fallen-kingdom.png',
+    link: 'https://public.tableau.com/app/profile/judit.bekker/viz/MyFallenKingdom/Fallenkingdom',
+    description: 'I took a measuring tape and drew out the layout of my flat to make a heat-map of what I\'m doing for how long in the apartment. Why? Cause it was peak quarantine time and I had very little to do. This project came in handy for a future renovation project.',
+  },
+];
 ---
 <Layout title="Judit Bekker – Portfolio">
+
+  <!-- Search bar in nav -->
+  <div slot="nav-search" class="nav-search">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+    </svg>
+    <input type="search" id="portfolio-search" placeholder="Search..." autocomplete="off" />
+  </div>
 
   <!-- Hero -->
   <section class="hero">
     <div class="container hero-inner">
+
+      <!-- Left: photo + meta -->
       <div class="hero-left">
-        <div class="hero-photo-wrap">
-          <img src={`${import.meta.env.BASE_URL}images/judit-portrait.jpg`} alt="Judit Bekker" class="hero-photo" />
+        <div class="photo-bg">
+          <img src={`${base}images/judit-portrait.jpg`} alt="Judit Bekker" class="hero-photo" />
         </div>
         <div class="hero-meta">
           <strong class="hero-name">Judit Bekker</strong>
@@ -16,34 +142,38 @@ import Layout from '../layouts/Layout.astro';
           <span>2x Tableau Zen Master</span>
           <span>Berlin, Germany</span>
         </div>
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/bekkerjudit/" target="_blank" rel="noopener" aria-label="LinkedIn">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          </a>
-          <a href="https://public.tableau.com/app/profile/judit.bekker/vizzes" target="_blank" rel="noopener" aria-label="Tableau Public">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.014 11.014v-3.77h1.972v3.77h3.77v1.972h-3.77v3.77h-1.972v-3.77H7.244v-1.972zm10.234-7.982h-1.316V1.974H18.62v1.058h-1.316V4.35h1.316v1.317h1.316V4.35h1.316V3.032h-1.316zm0 17.936h-1.316v-1.058H18.62v1.058h-1.316v1.317h1.316v1.316h1.316v-1.316h1.316v-1.317h-1.316zm-17.936 0H1.996v-1.058H.68v1.058H-.636v1.317H.68v1.316h1.316v-1.316h1.316v-1.317H1.312zm0-17.936H1.996V1.974H.68v1.058H-.636V4.35H.68v1.317h1.316V4.35h1.316V3.032H1.312zM12 0l-.956 2.339H8.705L10.478 3.77 9.522 6.109 12 4.678l2.478 1.431-.956-2.339L15.295 2.34H12.956zm0 17.891l-.956 2.339H8.705l1.773 1.431-.956 2.339L12 22.569l2.478 1.431-.956-2.339 1.773-1.431H12.956zM0 12l2.339.956v2.339l1.431-1.773 2.339.956-1.431-2.478 1.431-2.478-2.339.956L2.339 8.705V11.044zM17.891 12l2.339.956v2.339l1.431-1.773 2.339.956-1.431-2.478 1.431-2.478-2.339.956-1.431-1.773v2.339z"/></svg>
-          </a>
-          <a href="https://www.behance.net/bekkerjudk90a4" target="_blank" rel="noopener" aria-label="Behance">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.938 4.503c.702 0 1.34.06 1.92.188.577.13 1.07.33 1.485.61.41.28.733.65.96 1.12.225.47.34 1.05.34 1.73 0 .74-.17 1.36-.507 1.86-.338.5-.837.9-1.502 1.22.906.26 1.576.72 2.022 1.37.448.66.665 1.45.665 2.36 0 .75-.13 1.39-.41 1.93-.28.55-.67 1-1.16 1.35-.48.348-1.05.6-1.69.753-.635.15-1.3.22-1.987.22H0V4.51h6.938v-.007zm-.34 5.65c.585 0 1.07-.14 1.44-.42.37-.28.555-.72.555-1.32 0-.33-.06-.61-.178-.83-.12-.22-.29-.4-.5-.53-.21-.13-.45-.22-.72-.27-.27-.05-.55-.075-.84-.075H3.24v3.44h3.357zm.16 5.925c.315 0 .61-.03.888-.09s.52-.16.727-.3c.21-.14.37-.33.49-.57.12-.24.18-.54.18-.9 0-.72-.2-1.23-.602-1.54-.4-.31-.935-.46-1.6-.46H3.24v3.86h3.518zm9.832-2.52c.26.77.745 1.17 1.462 1.17.483 0 .893-.13 1.23-.39.34-.26.56-.54.663-.84h2.45c-.39 1.2-1.003 2.06-1.83 2.56-.83.5-1.83.75-3.01.75-.81 0-1.54-.13-2.19-.38-.65-.25-1.2-.61-1.65-1.07-.45-.46-.8-1.01-1.04-1.65-.24-.64-.36-1.35-.36-2.12 0-.75.12-1.44.37-2.07.24-.63.59-1.17 1.04-1.63.45-.46 1-.82 1.64-1.08.64-.25 1.36-.38 2.15-.38.88 0 1.65.17 2.31.51.66.34 1.2.79 1.62 1.36.42.57.72 1.22.9 1.95.18.73.23 1.5.14 2.3h-7.34c.03.82.25 1.44.51 1.9zm2.88-4.88c-.35-.29-.83-.44-1.46-.44-.43 0-.78.07-1.06.21-.28.14-.5.32-.67.53-.17.21-.29.44-.36.68-.07.24-.11.47-.13.69h4.31c-.09-.77-.27-1.37-.63-1.66zm-3.72-5.5h5.5v1.35h-5.5V3.18z"/></svg>
-          </a>
-          <a href="https://hu.pinterest.com/judkacag/" target="_blank" rel="noopener" aria-label="Pinterest">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
-          </a>
-          <a href="https://github.com/judkacag" target="_blank" rel="noopener" aria-label="GitHub">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-          </a>
-        </div>
       </div>
 
-      <div class="hero-right">
+      <!-- Center: text + buttons -->
+      <div class="hero-center">
         <h1 class="hero-greeting">HEY THERE,</h1>
         <p class="hero-bio">welcome to my website! I'm Judit Bekker, and I'm happy to have you here. I've been working as a Data Visualization Designer and Analyst for 15 years, and I'm obsessed with all things data. Whether I'm finding new ways to visualize complex information or digging into data to uncover insights, I'm always up to something. I tend to choose topics that need unique datasets, and if I'm married to an idea I don't mind spending a month working on a viz. Spoiler alert: I once counted all the damn fine coffees that were consumed in Twin Peaks, and those 50 hours flew by faster than a coffee gets cold.</p>
         <p class="hero-bio">When I'm not working, you can catch me doodling on photos, coming up with new hobbies, or running away from my arch enemies: pigeons. I'm excited to share my projects and knowledge with you on this new website where I can finally embrace my everlasting love for my favourite font: Futura!</p>
         <div class="hero-ctas">
-          <a href={`${import.meta.env.BASE_URL}about-me`} class="btn-link">More About Me</a>
+          <a href={`${base}about-me`} class="btn-link">More About Me</a>
           <a href="#portfolio" class="btn-link">My Portfolio</a>
         </div>
       </div>
+
+      <!-- Right: vertical social icons -->
+      <div class="hero-social">
+        <a href="https://www.linkedin.com/in/bekkerjudit/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <img src={`${base}images/icons/linkedin.png`} alt="LinkedIn" />
+        </a>
+        <a href="https://public.tableau.com/app/profile/judit.bekker/vizzes" target="_blank" rel="noopener" aria-label="Tableau Public">
+          <img src={`${base}images/icons/tableau.png`} alt="Tableau" />
+        </a>
+        <a href="https://www.behance.net/bekkerjudk90a4" target="_blank" rel="noopener" aria-label="Behance">
+          <img src={`${base}images/icons/behance.png`} alt="Behance" />
+        </a>
+        <a href="https://hu.pinterest.com/judkacag/" target="_blank" rel="noopener" aria-label="Pinterest">
+          <img src={`${base}images/icons/pinterest.png`} alt="Pinterest" />
+        </a>
+        <a href="https://github.com/judkacag" target="_blank" rel="noopener" aria-label="GitHub">
+          <img src={`${base}images/icons/github.png`} alt="GitHub" />
+        </a>
+      </div>
+
     </div>
   </section>
 
@@ -52,164 +182,211 @@ import Layout from '../layouts/Layout.astro';
     <div class="container">
       <h2 class="section-title">My Portfolio</h2>
       <p class="section-subtitle">Here you'll find a selection of my work, and soon realise that the majority of them are about movies and television. Click on the images to get to know more, and explore the interactive versions.</p>
-      <div class="portfolio-grid">
-        <a href="https://public.tableau.com/app/profile/judit.bekker/viz/TheCoffeesofTwinPeaks/TheCoffeesofTwinPeaks" target="_blank" rel="noopener" class="portfolio-item">
-          <img src={`${import.meta.env.BASE_URL}images/portfolio/twin-peaks.png`} alt="The Coffees of Twin Peaks" />
-        </a>
-        <a href="https://public.tableau.com/app/profile/judit.bekker/viz/BeerhikinginBerlin/bierwandern" target="_blank" rel="noopener" class="portfolio-item">
-          <img src={`${import.meta.env.BASE_URL}images/portfolio/beer-hiking.png`} alt="Beer hiking in Berlin" />
-        </a>
-        <a href="https://public.tableau.com/app/profile/judit.bekker/viz/Mostfamouscomposersofthe20thcentury/Composersofthe20thcentury" target="_blank" rel="noopener" class="portfolio-item">
-          <img src={`${import.meta.env.BASE_URL}images/portfolio/composers.png`} alt="Most famous composers of the 20th century" />
-        </a>
-        <a href="https://www.behance.net/gallery/115499067/Whats-in-the-bag" target="_blank" rel="noopener" class="portfolio-item">
-          <img src={`${import.meta.env.BASE_URL}images/portfolio/what-s-in-the-bag.png`} alt="What's in the bag?" />
-        </a>
-        <a href="https://public.tableau.com/app/profile/judit.bekker/viz/setmymindonFIRE/Firewalkwithme" target="_blank" rel="noopener" class="portfolio-item">
-          <img src={`${import.meta.env.BASE_URL}images/portfolio/fire-walk-with-me.png`} alt="Fire Walk With Me" />
-        </a>
-        <a href="https://public.tableau.com/app/profile/judit.bekker/viz/Thehistoryofmodernphotography/Historyofmodernphotography" target="_blank" rel="noopener" class="portfolio-item">
-          <img src={`${import.meta.env.BASE_URL}images/portfolio/kodak.png`} alt="The History of Modern Photography" />
-        </a>
-        <a href="https://public.tableau.com/app/profile/judit.bekker/viz/WildatHeart/WildatHeart" target="_blank" rel="noopener" class="portfolio-item">
-          <img src={`${import.meta.env.BASE_URL}images/portfolio/wild-at-heart.png`} alt="Wild at Heart" />
-        </a>
-        <a href="https://public.tableau.com/app/profile/judit.bekker/viz/SeverancePleaseenjoyeachfactequally/Ahandshakeisavailableuponrequest" target="_blank" rel="noopener" class="portfolio-item">
-          <img src={`${import.meta.env.BASE_URL}images/portfolio/severance.png`} alt="Please enjoy each fact equally (Severance)" />
-        </a>
-        <a href="https://www.behance.net/gallery/122698727/Amy-Adams-movies" target="_blank" rel="noopener" class="portfolio-item">
-          <img src={`${import.meta.env.BASE_URL}images/portfolio/amy-adams.png`} alt="Amy Adams Career" />
-        </a>
-        <a href="https://www.behance.net/gallery/169433427/Largest-lakes-around-Berlin" target="_blank" rel="noopener" class="portfolio-item">
-          <img src={`${import.meta.env.BASE_URL}images/portfolio/lakes-of-berlin.png`} alt="Lakes of Berlin" />
-        </a>
-        <a href="https://public.tableau.com/app/profile/judit.bekker/viz/IcelandTheLandofFireandIce/IcelandThelandoffireandice" target="_blank" rel="noopener" class="portfolio-item">
-          <img src={`${import.meta.env.BASE_URL}images/portfolio/iceland.png`} alt="The Land of Ice and Fire" />
-        </a>
-        <a href="https://public.tableau.com/app/profile/judit.bekker/viz/moonpalace/Moonphases2020" target="_blank" rel="noopener" class="portfolio-item">
-          <img src={`${import.meta.env.BASE_URL}images/portfolio/moon-phases.png`} alt="Moon Phases 2020" />
-        </a>
-        <a href="https://public.tableau.com/app/profile/judit.bekker/viz/EasternBloc-StalinistArchitecture/Eastern_bloc" target="_blank" rel="noopener" class="portfolio-item">
-          <img src={`${import.meta.env.BASE_URL}images/portfolio/eastern-bloc.png`} alt="Eastern Bloc" />
-        </a>
-        <a href="https://public.tableau.com/app/profile/judit.bekker/viz/infinite_jest/InfiniteJest" target="_blank" rel="noopener" class="portfolio-item">
-          <img src={`${import.meta.env.BASE_URL}images/portfolio/infinite-jest.png`} alt="Infinite Jest" />
-        </a>
-        <a href="https://public.tableau.com/app/profile/judit.bekker/viz/MyFallenKingdom/Fallenkingdom" target="_blank" rel="noopener" class="portfolio-item">
-          <img src={`${import.meta.env.BASE_URL}images/portfolio/my-fallen-kingdom.png`} alt="My Fallen Kingdom" />
-        </a>
-        <a href="https://public.tableau.com/app/profile/judit.bekker/viz/WoodyAllenTheManfromNewYork/WoodyAllen" target="_blank" rel="noopener" class="portfolio-item">
-          <img src={`${import.meta.env.BASE_URL}images/portfolio/woody-allen.png`} alt="Woody Allen's filmography" />
-        </a>
+      <div class="portfolio-grid" id="portfolio-grid">
+        {portfolioItems.map(item => (
+          <a
+            href={item.link}
+            target="_blank"
+            rel="noopener"
+            class="portfolio-item"
+            data-title={item.title.toLowerCase()}
+          >
+            <img
+              src={`${base}images/portfolio/${item.image}`}
+              alt={item.title}
+              loading="lazy"
+            />
+            <div class="portfolio-overlay">
+              <h3 class="overlay-title">{item.title}</h3>
+              <p class="overlay-desc">{item.description}</p>
+            </div>
+          </a>
+        ))}
       </div>
+      <p class="no-results" id="no-results" style="display:none">No results found.</p>
     </div>
   </section>
 
 </Layout>
 
+<script>
+  const searchInput = document.getElementById('portfolio-search') as HTMLInputElement | null;
+  if (searchInput) {
+    searchInput.addEventListener('input', () => {
+      const q = searchInput.value.toLowerCase();
+      let visible = 0;
+      document.querySelectorAll<HTMLElement>('.portfolio-item').forEach(item => {
+        const match = (item.dataset.title || '').includes(q);
+        item.style.display = match ? '' : 'none';
+        if (match) visible++;
+      });
+      const noResults = document.getElementById('no-results');
+      if (noResults) noResults.style.display = visible === 0 ? '' : 'none';
+    });
+  }
+</script>
+
 <style>
+  /* ── Nav search ──────────────────────────────────────────────── */
+  .nav-search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid var(--color-border);
+    padding: 5px 12px;
+    color: var(--color-muted);
+  }
+
+  .nav-search input {
+    border: none;
+    outline: none;
+    font-family: var(--font-main);
+    font-size: 0.82rem;
+    color: var(--color-text);
+    background: transparent;
+    width: 160px;
+  }
+
+  .nav-search input::placeholder {
+    color: var(--color-muted);
+  }
+
+  /* ── Hero ────────────────────────────────────────────────────── */
   .hero {
-    padding: 64px 0 72px;
+    padding: 56px 0 72px;
   }
 
   .hero-inner {
-    display: grid;
-    grid-template-columns: 260px 1fr;
-    gap: 64px;
-    align-items: start;
-  }
-
-  .hero-left {
     display: flex;
-    flex-direction: column;
+    gap: 56px;
     align-items: flex-start;
-    gap: 20px;
   }
 
-  .hero-photo-wrap {
-    width: 220px;
-    height: 220px;
+  /* Left column: photo + meta */
+  .hero-left {
+    flex: 0 0 300px;
+    animation: slideLeft 0.65s ease both;
+  }
+
+  .photo-bg {
+    background: linear-gradient(180deg, rgba(250,212,189,0.75) 0%, #ffffff 100%);
+    padding: 24px 16px 0;
+    margin-bottom: 20px;
     overflow: hidden;
-    border-radius: 4px;
   }
 
   .hero-photo {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    display: block;
   }
 
   .hero-meta {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 5px;
     font-size: 0.85rem;
+    color: var(--color-text);
   }
 
   .hero-name {
-    font-size: 1rem;
+    font-size: 1.05rem;
     font-weight: 700;
   }
 
-  .social-links {
-    display: flex;
-    gap: 14px;
-  }
-
-  .social-links a {
-    color: var(--color-text);
-    transition: color 0.2s;
-  }
-
-  .social-links a:hover {
-    color: var(--color-accent);
-    text-decoration: none;
-  }
-
-  .hero-right {
-    padding-top: 8px;
+  /* Center column: greeting + bio + buttons */
+  .hero-center {
+    flex: 1;
+    min-width: 0;
+    padding-top: 4px;
+    animation: slideRight 0.65s ease 0.1s both;
   }
 
   .hero-greeting {
-    font-size: clamp(3rem, 6vw, 5.5rem);
-    font-weight: 700;
-    color: var(--color-accent);
-    letter-spacing: -0.01em;
-    margin-bottom: 24px;
+    font-family: Impact, 'Arial Narrow', sans-serif;
+    font-size: clamp(3rem, 5.5vw, 5.5rem);
+    font-weight: 400;
+    color: #DC9C79;
+    letter-spacing: 0.01em;
     line-height: 1;
+    margin-bottom: 28px;
   }
 
   .hero-bio {
     font-size: 0.95rem;
-    line-height: 1.7;
-    max-width: 620px;
+    line-height: 1.75;
     margin-bottom: 16px;
+    color: var(--color-text);
   }
 
   .hero-ctas {
     display: flex;
-    gap: 24px;
-    margin-top: 28px;
+    gap: 16px;
+    margin-top: 32px;
+    flex-wrap: wrap;
   }
 
   .btn-link {
-    font-size: 0.85rem;
+    display: inline-block;
+    padding: 10px 28px;
+    background: #f0f0f0;
+    color: var(--color-text);
+    font-family: var(--font-main);
+    font-size: 0.8rem;
     font-weight: 500;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--color-text);
-    border-bottom: 2px solid var(--color-text);
-    padding-bottom: 2px;
     text-decoration: none;
-    transition: color 0.2s, border-color 0.2s;
+    border: none;
+    transition: background 0.2s, color 0.2s;
   }
 
   .btn-link:hover {
-    color: var(--color-accent);
-    border-color: var(--color-accent);
+    background: #F28080;
+    color: #ffffff;
     text-decoration: none;
   }
 
+  /* Right column: social icons */
+  .hero-social {
+    flex: 0 0 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    padding-top: 12px;
+    animation: slideRight 0.65s ease 0.15s both;
+  }
+
+  .hero-social a {
+    display: block;
+    opacity: 0.65;
+    transition: opacity 0.2s;
+  }
+
+  .hero-social a:hover {
+    opacity: 1;
+    text-decoration: none;
+  }
+
+  .hero-social img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    display: block;
+  }
+
+  /* ── Animations ──────────────────────────────────────────────── */
+  @keyframes slideLeft {
+    from { opacity: 0; transform: translateX(-40px); }
+    to   { opacity: 1; transform: translateX(0); }
+  }
+
+  @keyframes slideRight {
+    from { opacity: 0; transform: translateX(40px); }
+    to   { opacity: 1; transform: translateX(0); }
+  }
+
+  /* ── Portfolio ───────────────────────────────────────────────── */
   .portfolio {
     padding: 64px 0 80px;
     border-top: 1px solid var(--color-border);
@@ -219,13 +396,16 @@ import Layout from '../layouts/Layout.astro';
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 12px;
+    text-align: center;
   }
 
   .section-subtitle {
     color: var(--color-muted);
     font-size: 0.9rem;
     max-width: 600px;
-    margin-bottom: 40px;
+    margin: 0 auto 40px;
+    text-align: center;
+    line-height: 1.7;
   }
 
   .portfolio-grid {
@@ -237,51 +417,82 @@ import Layout from '../layouts/Layout.astro';
     break-inside: avoid;
     display: block;
     margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
   }
 
   .portfolio-item img {
     width: 100%;
     display: block;
-    transition: opacity 0.2s;
     border: 1px solid var(--color-border);
+    transition: transform 0.35s ease;
   }
 
   .portfolio-item:hover img {
-    opacity: 0.85;
+    transform: scale(1.03);
   }
 
-  .portfolio-placeholder {
+  .portfolio-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(28, 28, 28, 0.88);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 28px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+  }
+
+  .overlay-title {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.3;
+  }
+
+  .overlay-desc {
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 0.78rem;
+    line-height: 1.65;
+    margin: 0;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+  }
+
+  .no-results {
     color: var(--color-muted);
-    font-size: 0.85rem;
-    grid-column: 1 / -1;
+    font-size: 0.9rem;
+    margin-top: 24px;
+    text-align: center;
   }
 
-  .portfolio-placeholder code {
-    background: #f5f5f5;
-    padding: 1px 5px;
-    border-radius: 3px;
-    font-size: 0.8rem;
+  /* ── Responsive ──────────────────────────────────────────────── */
+  @media (max-width: 960px) {
+    .portfolio-grid { columns: 2; }
+    .hero-inner { gap: 36px; }
+    .hero-left { flex: 0 0 240px; }
   }
 
-  @media (max-width: 900px) {
-    .portfolio-grid {
-      columns: 2;
-    }
-  }
-
-  @media (max-width: 768px) {
+  @media (max-width: 680px) {
     .hero-inner {
-      grid-template-columns: 1fr;
-      gap: 40px;
+      flex-direction: column;
+      gap: 32px;
     }
-
-    .hero-photo-wrap {
-      width: 160px;
-      height: 160px;
+    .hero-left { flex: none; width: 100%; max-width: 320px; }
+    .hero-social {
+      flex-direction: row;
+      flex: none;
+      gap: 20px;
     }
-
-    .portfolio-grid {
-      columns: 1;
-    }
+    .portfolio-grid { columns: 1; }
   }
 </style>

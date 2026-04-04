@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap');
 
+/* Use local Futura if installed (e.g. from FontBook), fall back to Jost */
+@font-face {
+  font-family: 'Futura';
+  src: local('Futura PT'), local('Futura PT Book'), local('Futura-Medium'),
+       local('Futura Medium'), local('Futura');
+  font-weight: 300 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Futura';
+  src: local('Futura PT Bold'), local('Futura-Bold'), local('Futura Bold');
+  font-weight: 600 900;
+  font-style: normal;
+}
+
 /* ── Design Tokens ─────────────────────────────────────────────── */
 :root {
   --color-bg:       #ffffff;
@@ -9,7 +24,7 @@
   --color-border:   #e8e8e8;
   --color-bg-soft:  #fdf6f4;
 
-  --font-main: 'Jost', 'Futura', 'Century Gothic', sans-serif;
+  --font-main: 'Futura', 'Century Gothic', 'Jost', sans-serif;
 
   --max-width: 1200px;
   --nav-height: 60px;

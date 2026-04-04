@@ -26,6 +26,7 @@ const base = import.meta.env.BASE_URL;
           <a href={`${base}about-me`} class:list={["nav-link", { active: currentPath.includes("/about") }]}>About me</a>
           <a href={`${base}blog`} class:list={["nav-link", { active: currentPath.includes("/blog") }]}>Blog</a>
         </nav>
+        <slot name="nav-search" />
       </div>
     </header>
 
@@ -54,6 +55,7 @@ const base = import.meta.env.BASE_URL;
   .header-inner {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 100%;
   }
 

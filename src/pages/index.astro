@@ -138,9 +138,9 @@ const portfolioItems = [
         </div>
         <div class="hero-meta">
           <strong class="hero-name">Judit Bekker</strong>
-          <span>Data Visualization Designer</span>
-          <span>2x Tableau Zen Master</span>
-          <span>Berlin, Germany</span>
+          <span class="hero-title">Data Visualization Designer</span>
+          <span class="hero-detail">2x Tableau Zen Master</span>
+          <span class="hero-detail">Berlin, Germany</span>
         </div>
       </div>
 
@@ -283,14 +283,24 @@ const portfolioItems = [
   .hero-meta {
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    font-size: 0.85rem;
-    color: var(--color-text);
+    gap: 6px;
+    color: #363636;
   }
 
   .hero-name {
-    font-size: 1.05rem;
+    font-size: 28px;
     font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .hero-title {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .hero-detail {
+    font-size: 16px;
+    font-weight: 400;
   }
 
   /* Center column: greeting + bio + buttons */
@@ -328,21 +338,22 @@ const portfolioItems = [
   .btn-link {
     display: inline-block;
     padding: 10px 28px;
-    background: #f0f0f0;
-    color: var(--color-text);
+    background: transparent;
+    color: #363636;
     font-family: var(--font-main);
     font-size: 0.8rem;
     font-weight: 500;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-decoration: none;
-    border: none;
-    transition: background 0.2s, color 0.2s;
+    border: 1.5px solid #cccccc;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
   }
 
   .btn-link:hover {
     background: #F28080;
     color: #ffffff;
+    border-color: #F28080;
     text-decoration: none;
   }
 
@@ -436,7 +447,7 @@ const portfolioItems = [
   .portfolio-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(28, 28, 28, 0.88);
+    background: rgba(220, 156, 121, 0.93);
     display: flex;
     flex-direction: column;
     justify-content: center;

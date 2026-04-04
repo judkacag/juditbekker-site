@@ -307,7 +307,7 @@ const portfolioItems = [
 
   /* Center column: greeting + bio + buttons */
   .hero-center {
-    flex: 1;
+    flex: 0 1 520px;
     min-width: 0;
     padding-top: 4px;
     animation: slideRight 0.65s ease 0.1s both;
@@ -321,7 +321,6 @@ const portfolioItems = [
     letter-spacing: 0.01em;
     line-height: 1;
     margin-bottom: 28px;
-    max-width: 520px;
   }
 
   .hero-bio {
@@ -330,7 +329,6 @@ const portfolioItems = [
     margin-bottom: 16px;
     color: var(--color-text);
     text-align: justify;
-    max-width: 520px;
   }
 
   .hero-ctas {
@@ -390,8 +388,8 @@ const portfolioItems = [
     height: 28px;
     object-fit: contain;
     display: block;
-    /* tint PNG icons to #363636 */
-    filter: brightness(0) invert(0.21);
+    mix-blend-mode: multiply;
+    filter: brightness(0.45);
   }
 
   /* ── Animations ──────────────────────────────────────────────── */

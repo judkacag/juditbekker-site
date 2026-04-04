@@ -267,7 +267,7 @@ const portfolioItems = [
     padding: 28px 20px 32px;
     display: flex;
     flex-direction: column;
-    animation: slideLeft 0.65s ease both;
+    animation: slideLeft 1.2s ease both;
   }
 
   .hero-photo {
@@ -310,7 +310,7 @@ const portfolioItems = [
     flex: 0 1 520px;
     min-width: 0;
     padding-top: 4px;
-    animation: slideRight 0.65s ease 0.1s both;
+    animation: slideRight 1.2s ease 0.15s both;
   }
 
   .hero-greeting {
@@ -369,7 +369,7 @@ const portfolioItems = [
     gap: 12px;
     /* start at the same vertical position as the bio text */
     padding-top: calc(clamp(3rem, 5.5vw, 5.5rem) + 28px);
-    animation: slideRight 0.65s ease 0.15s both;
+    animation: slideRight 1.2s ease 0.25s both;
   }
 
   .hero-social a {
@@ -392,12 +392,12 @@ const portfolioItems = [
 
   /* ── Animations ──────────────────────────────────────────────── */
   @keyframes slideLeft {
-    from { opacity: 0; transform: translateX(-40px); }
+    from { opacity: 0; transform: translateX(-70px); }
     to   { opacity: 1; transform: translateX(0); }
   }
 
   @keyframes slideRight {
-    from { opacity: 0; transform: translateX(40px); }
+    from { opacity: 0; transform: translateX(70px); }
     to   { opacity: 1; transform: translateX(0); }
   }
 

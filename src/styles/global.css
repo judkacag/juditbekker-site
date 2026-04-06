@@ -41,7 +41,7 @@ h1, h2, h3, h4 {
   color: var(--color-text);
 }
 
-p { margin-bottom: 1.2em; }
+p { margin-bottom: 1.2em; text-align: justify; }
 p:last-child { margin-bottom: 0; }
 
 /* ── Layout helpers ────────────────────────────────────────────── */

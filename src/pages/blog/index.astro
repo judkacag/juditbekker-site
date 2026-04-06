@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 
+const base = import.meta.env.BASE_URL;
 const allPosts = await getCollection('blog', ({ data }) => !data.draft);
 const posts = allPosts.sort((a, b) =>
   new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
@@ -19,7 +20,7 @@ function formatDate(dateStr: string) {
     <div class="container">
       <div class="blog-grid">
         {posts.map((post) => (
-          <a href={`/blog/${post.id}`} class="post-card">
+          <a href={`${base}blog/${post.id}`} class="post-card">
             <div class="post-card-body">
               <div class="post-meta">
                 <span class="post-date">{formatDate(post.data.date)}</span>

@@ -1,6 +1,7 @@
 ---
 title: "Beer hiking in Berlin"
 date: "2024-03-27"
+heroImage: "images/blog/beer-hiking-in-berlin/hero.png"
 url: "https://www.juditbekker.com/post/beer-hiking-in-berlin-1"
 ---
 

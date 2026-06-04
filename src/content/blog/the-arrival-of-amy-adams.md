@@ -1,6 +1,7 @@
 ---
 title: "The Arrival of Amy Adams"
 date: "2021-07-03"
+heroImage: "images/blog/the-arrival-of-amy-adams/hero.png"
 url: "https://www.juditbekker.com/post/the-arrival-of-amy-adams"
 ---
 

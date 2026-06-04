@@ -1,6 +1,7 @@
 ---
 title: "Seen im Berlin"
 date: "2023-04-28"
+heroImage: "images/blog/seen-im-berlin/hero.png"
 url: "https://www.juditbekker.com/post/seen-im-berlin"
 ---
 

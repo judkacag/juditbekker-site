@@ -1,6 +1,7 @@
 ---
 title: "Please enjoy each fact equally"
 date: "2022-06-18"
+heroImage: "images/blog/please-enjoy-each-fact-equally/hero.png"
 url: "https://www.juditbekker.com/post/please-enjoy-each-fact-equally-1"
 ---
 

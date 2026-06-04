@@ -1,6 +1,7 @@
 ---
 title: "Wild at heart and weird on top"
 date: "2021-09-12"
+heroImage: "images/blog/wild-at-heart-and-weird-on-top/hero.png"
 url: "https://www.juditbekker.com/post/wild-at-heart-and-weird-on-top"
 ---
 

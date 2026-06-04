@@ -1,6 +1,7 @@
 ---
 title: "Girls can be anything"
 date: "2021-02-04"
+heroImage: "images/blog/girls-can-be-anything/hero.png"
 url: "https://www.juditbekker.com/post/girls-can-be-anything"
 ---
 

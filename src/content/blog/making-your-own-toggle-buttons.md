@@ -1,6 +1,7 @@
 ---
 title: "Making your own toggle buttons"
 date: "2020-08-19"
+heroImage: "images/blog/making-your-own-toggle-buttons/hero.png"
 url: "https://www.juditbekker.com/post/making-your-own-toggle-buttons"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Part 1: p5.js adventures"
 date: "2022-02-08"
+heroImage: "images/blog/part-1-p5js-adventures/hero.jpg"
 url: "https://www.juditbekker.com/post/part-1-p5-js-adventures"
 ---
 

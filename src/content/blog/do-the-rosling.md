@@ -1,6 +1,7 @@
 ---
 title: "Do the Rosling"
 date: "2020-02-26"
+heroImage: "images/blog/do-the-rosling/hero.png"
 url: "https://www.juditbekker.com/post/do-the-rosling"
 ---
 

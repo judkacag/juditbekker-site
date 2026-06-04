@@ -1,6 +1,7 @@
 ---
 title: "Custom folder images on Tableau Online"
 date: "2023-04-04"
+heroImage: "images/blog/custom-folder-images-on-tableau-online/hero.png"
 url: "https://www.juditbekker.com/post/custom-folder-images-on-tableau-online"
 ---
 

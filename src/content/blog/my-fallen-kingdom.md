@@ -1,6 +1,7 @@
 ---
 title: "My Fallen Kingdom"
 date: "2020-04-23"
+heroImage: "images/blog/my-fallen-kingdom/hero.png"
 url: "https://www.juditbekker.com/post/my-fallen-kingdom"
 ---
 

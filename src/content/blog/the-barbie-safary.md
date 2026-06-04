@@ -1,6 +1,7 @@
 ---
 title: "The Barbie Safary"
 date: "2018-04-19"
+heroImage: "images/blog/the-barbie-safary/hero.jpg"
 url: "https://www.juditbekker.com/post/the-barbie-safary"
 ---
 

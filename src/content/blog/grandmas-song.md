@@ -1,6 +1,7 @@
 ---
 title: "Grandma’s song"
 date: "2021-04-24"
+heroImage: "images/blog/grandmas-song/hero.webp"
 url: "https://www.juditbekker.com/post/grandma-s-song"
 ---
 

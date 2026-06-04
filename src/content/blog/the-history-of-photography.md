@@ -1,6 +1,7 @@
 ---
 title: "The history of photography"
 date: "2021-02-15"
+heroImage: "images/blog/the-history-of-photography/hero.png"
 url: "https://www.juditbekker.com/post/the-history-of-photography"
 ---
 

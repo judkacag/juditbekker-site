@@ -1,6 +1,7 @@
 ---
 title: "How to make a Saturn chart?"
 date: "2021-09-25"
+heroImage: "images/blog/how-to-make-a-saturn-chart/hero.jpg"
 url: "https://www.juditbekker.com/post/how-to-make-a-saturn-chart"
 ---
 

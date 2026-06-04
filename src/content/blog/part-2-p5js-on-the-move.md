@@ -1,6 +1,7 @@
 ---
 title: "Part 2: p5.js on the move"
 date: "2022-02-20"
+heroImage: "images/blog/part-2-p5js-on-the-move/hero.jpg"
 url: "https://www.juditbekker.com/post/part-2-p5-js-on-the-move"
 ---
 

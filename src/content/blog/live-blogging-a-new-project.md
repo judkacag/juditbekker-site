@@ -1,6 +1,7 @@
 ---
 title: "Live-blogging a new project"
 date: "2021-05-04"
+heroImage: "images/blog/live-blogging-a-new-project/hero.png"
 url: "https://www.juditbekker.com/post/live-blogging-a-new-project"
 ---
 

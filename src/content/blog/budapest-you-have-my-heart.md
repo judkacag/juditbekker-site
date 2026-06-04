@@ -1,6 +1,7 @@
 ---
 title: "Budapest, you have my heart"
 date: "2020-06-19"
+heroImage: "images/blog/budapest-you-have-my-heart/hero.png"
 url: "https://www.juditbekker.com/post/budapest-you-have-my-heart"
 ---
 

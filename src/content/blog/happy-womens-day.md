@@ -1,6 +1,7 @@
 ---
 title: "Happy Women’s Day!"
 date: "2021-03-08"
+heroImage: "images/blog/happy-womens-day/hero.png"
 url: "https://www.juditbekker.com/post/happy-women-s-day"
 ---
 

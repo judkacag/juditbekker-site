@@ -1,6 +1,7 @@
 ---
 title: "I dared to make a map"
 date: "2020-11-08"
+heroImage: "images/blog/i-dared-to-make-a-map/hero.png"
 url: "https://www.juditbekker.com/post/i-dared-to-make-a-map"
 ---
 

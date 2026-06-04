@@ -1,6 +1,7 @@
 ---
 title: "Dark: The End is the Beginning"
 date: "2020-06-18"
+heroImage: "images/blog/dark-the-end-is-the-beginning/hero.png"
 url: "https://www.juditbekker.com/post/dark-the-end-is-the-beginning"
 ---
 

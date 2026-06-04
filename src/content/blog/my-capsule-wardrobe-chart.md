@@ -1,6 +1,7 @@
 ---
 title: "My Capsule Wardrobe Chart"
 date: "2024-12-10"
+heroImage: "images/blog/my-capsule-wardrobe-chart/hero.png"
 url: "https://www.juditbekker.com/post/my-capsule-wardrobe-chart"
 ---
 

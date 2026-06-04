@@ -1,6 +1,7 @@
 ---
 title: "Vienna: a visual diary"
 date: "2021-07-24"
+heroImage: "images/blog/vienna-a-visual-diary/hero.jpg"
 url: "https://www.juditbekker.com/post/vienna-a-visual-diary"
 ---
 

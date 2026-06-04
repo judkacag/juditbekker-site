@@ -1,6 +1,7 @@
 ---
 title: "Infinite Jest: My biggest book challenge"
 date: "2020-07-06"
+heroImage: "images/blog/infinite-jest-my-biggest-book-challenge/hero.png"
 url: "https://www.juditbekker.com/post/infinite-jest-my-biggest-book-challenge"
 ---
 

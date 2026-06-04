@@ -1,6 +1,7 @@
 ---
 title: "Worst practice 3D bar chart"
 date: "2021-03-16"
+heroImage: "images/blog/worst-practice-3d-bar-chart/hero.png"
 url: "https://www.juditbekker.com/post/worst-practice-3d-bar-chart"
 ---
 

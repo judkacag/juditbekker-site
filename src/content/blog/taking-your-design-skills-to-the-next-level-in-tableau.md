@@ -1,6 +1,7 @@
 ---
 title: "Taking your design skills to the next level in Tableau"
 date: "2020-04-13"
+heroImage: "images/blog/taking-your-design-skills-to-the-next-level-in-tableau/hero.png"
 url: "https://www.juditbekker.com/post/taking-your-design-skills-to-the-next-level-in-tableau"
 ---
 

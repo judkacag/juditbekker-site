@@ -1,6 +1,7 @@
 ---
 title: "Welcome to my hood"
 date: "2021-02-04"
+heroImage: "images/blog/welcome-to-my-hood/hero.png"
 url: "https://www.juditbekker.com/post/welcome-to-my-hood"
 ---
 

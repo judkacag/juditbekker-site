@@ -1,6 +1,7 @@
 ---
 title: "Is Data Visualization dead?"
 date: "2026-04-06"
+heroImage: "images/blog/2026-04-06-is-data-visualization-dead/hero.png"
 draft: false
 ---
 

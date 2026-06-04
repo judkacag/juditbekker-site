@@ -1,6 +1,7 @@
 ---
 title: "Rome: a visual diary"
 date: "2024-06-06"
+heroImage: "images/blog/rome-a-visual-diary/hero.jpg"
 url: "https://www.juditbekker.com/post/rome-a-visual-diary"
 ---
 

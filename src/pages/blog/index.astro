@@ -48,9 +48,16 @@ function formatDate(dateStr: string) {
     padding: 56px 0 80px;
   }
 
+  /* fallback before JS runs */
   .blog-grid {
     columns: 3;
     column-gap: 24px;
+  }
+
+  /* JS-driven masonry resets the columns layout */
+  .blog-grid.js-masonry {
+    columns: unset;
+    position: relative;
   }
 
   .post-card {
@@ -61,7 +68,11 @@ function formatDate(dateStr: string) {
     padding-bottom: 24px;
     margin-bottom: 32px;
     transition: opacity 0.2s;
-    overflow: hidden;
+  }
+
+  .blog-grid.js-masonry .post-card {
+    position: absolute;
+    margin-bottom: 0;
   }
 
   .post-card:hover {
@@ -71,7 +82,6 @@ function formatDate(dateStr: string) {
 
   .post-card-image {
     margin-bottom: 16px;
-    flex-shrink: 0;
   }
 
   .post-card-image img {
@@ -114,3 +124,61 @@ function formatDate(dateStr: string) {
     .blog-grid { columns: 1; }
   }
 </style>
+
+<script is:inline>
+  (function () {
+    const GAP_X = 24;
+    const GAP_Y = 32;
+
+    function numCols() {
+      const w = window.innerWidth;
+      if (w > 900) return 3;
+      if (w > 600) return 2;
+      return 1;
+    }
+
+    function layout() {
+      const grid = document.querySelector('.blog-grid');
+      if (!grid) return;
+      const cols = numCols();
+
+      if (cols === 1) {
+        // revert to normal flow on mobile
+        grid.classList.remove('js-masonry');
+        grid.style.height = '';
+        Array.from(grid.querySelectorAll('.post-card')).forEach(function (card) {
+          card.style.width = '';
+          card.style.left = '';
+          card.style.top = '';
+        });
+        return;
+      }
+
+      const cards = Array.from(grid.querySelectorAll('.post-card'));
+      const gridW = grid.clientWidth;
+      const colW = (gridW - GAP_X * (cols - 1)) / cols;
+      const heights = new Array(cols).fill(0);
+
+      // set widths first so offsetHeight is correct
+      cards.forEach(function (card) {
+        card.style.width = colW + 'px';
+      });
+
+      grid.classList.add('js-masonry');
+
+      // place items left-to-right: item i goes into column i % cols
+      cards.forEach(function (card, i) {
+        const col = i % cols;
+        card.style.left = col * (colW + GAP_X) + 'px';
+        card.style.top = heights[col] + 'px';
+        heights[col] += card.offsetHeight + GAP_Y;
+      });
+
+      grid.style.height = Math.max.apply(null, heights) + 'px';
+    }
+
+    window.addEventListener('load', layout);
+    window.addEventListener('resize', layout);
+    document.addEventListener('DOMContentLoaded', layout);
+  })();
+</script>

@@ -23,7 +23,7 @@ function formatDate(dateStr: string) {
           <a href={`${base}blog/${post.id}`} class="post-card">
             {post.data.heroImage && (
               <div class="post-card-image">
-                <img src={`${base}${post.data.heroImage}`} alt="" loading="lazy" />
+                <img src={`${base}${post.data.heroImage}`} alt="" />
               </div>
             )}
             <div class="post-card-body">
@@ -177,8 +177,20 @@ function formatDate(dateStr: string) {
       grid.style.height = Math.max.apply(null, heights) + 'px';
     }
 
-    window.addEventListener('load', layout);
+    function layoutAndWatch() {
+      layout();
+      // re-run whenever a lazy image finishes loading
+      var imgs = document.querySelectorAll('.post-card-image img');
+      imgs.forEach(function (img) {
+        if (!img.complete) {
+          img.addEventListener('load', layout);
+          img.addEventListener('error', layout);
+        }
+      });
+    }
+
+    window.addEventListener('load', layoutAndWatch);
     window.addEventListener('resize', layout);
-    document.addEventListener('DOMContentLoaded', layout);
+    document.addEventListener('DOMContentLoaded', layoutAndWatch);
   })();
 </script>

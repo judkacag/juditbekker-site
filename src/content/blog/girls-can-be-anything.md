@@ -1,6 +1,7 @@
 ---
 title: "Girls can be anything"
 date: "2021-02-04"
+description: "I'm not a girly girl, but I'm obsessed with Barbie and love everything they stand for."
 heroImage: "images/blog/girls-can-be-anything/hero.png"
 url: "https://www.juditbekker.com/post/girls-can-be-anything"
 ---

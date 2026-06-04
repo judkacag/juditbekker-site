@@ -1,6 +1,7 @@
 ---
 title: "Part 1: p5.js adventures"
 date: "2022-02-08"
+description: "I'm shocked and extremely happy at the same time: I wrote 500 lines of code in 2 days and redid my most recent viz in p5.js."
 heroImage: "images/blog/part-1-p5js-adventures/hero.jpg"
 url: "https://www.juditbekker.com/post/part-1-p5-js-adventures"
 ---

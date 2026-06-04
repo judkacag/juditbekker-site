@@ -1,6 +1,7 @@
 ---
 title: "The Man from New York"
 date: "2020-09-22"
+description: "An unpopular opinion, but I was raised never to feel ashamed of the things I love. So here it is: I love Woody Allen."
 heroImage: "images/blog/the-man-from-new-york/hero.png"
 url: "https://www.juditbekker.com/post/the-man-from-new-york"
 ---

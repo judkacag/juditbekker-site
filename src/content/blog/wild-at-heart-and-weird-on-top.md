@@ -1,6 +1,7 @@
 ---
 title: "Wild at heart and weird on top"
 date: "2021-09-12"
+description: "Thanks to David Lynch for keeping me wild at heart, I managed to come up with a new visualization after months."
 heroImage: "images/blog/wild-at-heart-and-weird-on-top/hero.png"
 url: "https://www.juditbekker.com/post/wild-at-heart-and-weird-on-top"
 ---

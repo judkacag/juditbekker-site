@@ -1,6 +1,7 @@
 ---
 title: "Using photos: a love & hate relationship"
 date: "2021-02-18"
+description: "Dare to use images, but use them right, and don't overuse!"
 heroImage: "images/blog/using-photos-a-love-hate-relationship/hero.png"
 url: "https://www.juditbekker.com/post/using-photos-a-love-hate-relationship"
 ---

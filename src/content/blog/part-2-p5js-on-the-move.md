@@ -1,6 +1,7 @@
 ---
 title: "Part 2: p5.js on the move"
 date: "2022-02-20"
+description: "During the past week, I concentrated on making shapes move in p5. I can tell it's much easier to work with static elements only!"
 heroImage: "images/blog/part-2-p5js-on-the-move/hero.jpg"
 url: "https://www.juditbekker.com/post/part-2-p5-js-on-the-move"
 ---

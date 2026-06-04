@@ -1,6 +1,7 @@
 ---
 title: "Grandma’s song"
 date: "2021-04-24"
+description: "I never had a taste for classical music, but my grandma had a Bösendorfer since she was a child. So there was no way out."
 heroImage: "images/blog/grandmas-song/hero.webp"
 url: "https://www.juditbekker.com/post/grandma-s-song"
 ---

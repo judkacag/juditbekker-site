@@ -1,6 +1,7 @@
 ---
 title: "Seen im Berlin"
 date: "2023-04-28"
+description: "Out of pure jealousy of the Berliner Morgenpost I created an infographic about the lakes surrounding Berlin."
 heroImage: "images/blog/seen-im-berlin/hero.png"
 url: "https://www.juditbekker.com/post/seen-im-berlin"
 ---

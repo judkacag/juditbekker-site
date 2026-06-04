@@ -1,6 +1,7 @@
 ---
 title: "Infinite Jest: My biggest book challenge"
 date: "2020-07-06"
+description: "Somewhere around March at the beginning of quarantine in Hungary, a friend and I started to read Infinite Jest."
 heroImage: "images/blog/infinite-jest-my-biggest-book-challenge/hero.png"
 url: "https://www.juditbekker.com/post/infinite-jest-my-biggest-book-challenge"
 ---

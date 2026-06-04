@@ -1,6 +1,7 @@
 ---
 title: "Please enjoy each fact equally"
 date: "2022-06-18"
+description: "I hope Mr. Milchick will organize an Egg Bar Social, and a handshake will be available upon request after completing the Severance file."
 heroImage: "images/blog/please-enjoy-each-fact-equally/hero.png"
 url: "https://www.juditbekker.com/post/please-enjoy-each-fact-equally-1"
 ---

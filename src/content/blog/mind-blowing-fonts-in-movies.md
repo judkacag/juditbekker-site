@@ -1,6 +1,7 @@
 ---
 title: "Mind-blowing fonts in movies"
 date: "2021-02-07"
+description: "The people close to me know that I have a soft spot for movies. And fonts."
 heroImage: "images/blog/mind-blowing-fonts-in-movies/hero.jpg"
 url: "https://www.juditbekker.com/post/mind-blowing-fonts-in-movies"
 ---

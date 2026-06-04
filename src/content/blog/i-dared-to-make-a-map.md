@@ -1,6 +1,7 @@
 ---
 title: "I dared to make a map"
 date: "2020-11-08"
+description: "On Friday, Steven Shoemaker dared me to make a map-centered viz. It was like he was reading into me."
 heroImage: "images/blog/i-dared-to-make-a-map/hero.png"
 url: "https://www.juditbekker.com/post/i-dared-to-make-a-map"
 ---

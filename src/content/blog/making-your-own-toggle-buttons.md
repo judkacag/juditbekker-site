@@ -1,6 +1,7 @@
 ---
 title: "Making your own toggle buttons"
 date: "2020-08-19"
+description: "I love fussing with UI design elements and have a restless curiosity about how I can use them in Tableau."
 heroImage: "images/blog/making-your-own-toggle-buttons/hero.png"
 url: "https://www.juditbekker.com/post/making-your-own-toggle-buttons"
 ---

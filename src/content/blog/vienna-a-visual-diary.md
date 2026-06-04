@@ -1,6 +1,7 @@
 ---
 title: "Vienna: a visual diary"
 date: "2021-07-24"
+description: "I spent the last couple of days in Vienna with my bike, and it was one of my best decisions lately."
 heroImage: "images/blog/vienna-a-visual-diary/hero.jpg"
 url: "https://www.juditbekker.com/post/vienna-a-visual-diary"
 ---

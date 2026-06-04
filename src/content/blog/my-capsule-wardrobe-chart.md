@@ -1,6 +1,7 @@
 ---
 title: "My Capsule Wardrobe Chart"
 date: "2024-12-10"
+description: "I had the idea to visualize what I wear for a month, and I had slightly different expectations in terms of a lot of things."
 heroImage: "images/blog/my-capsule-wardrobe-chart/hero.png"
 url: "https://www.juditbekker.com/post/my-capsule-wardrobe-chart"
 ---

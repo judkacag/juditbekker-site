@@ -1,6 +1,7 @@
 ---
 title: "How to use fonts in Tableau?"
 date: "2020-05-13"
+description: "I had my hardships using fonts in Tableau and I'm far from being a typography expert, but here are some suggestions to avoid the common pitfalls."
 heroImage: "images/blog/how-to-use-fonts-in-tableau/hero.jpg"
 url: "https://www.juditbekker.com/post/how-to-use-fonts-in-tableau"
 ---

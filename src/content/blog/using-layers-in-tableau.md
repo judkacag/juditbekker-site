@@ -1,6 +1,7 @@
 ---
 title: "Using layers in Tableau"
 date: "2020-08-11"
+description: "A couple of weeks ago I made a simple (yet complicated) visualization in Tableau about mental illness in the US."
 heroImage: "images/blog/using-layers-in-tableau/hero.png"
 url: "https://www.juditbekker.com/post/using-layers-in-tableau"
 ---

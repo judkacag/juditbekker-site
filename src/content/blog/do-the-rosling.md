@@ -1,6 +1,7 @@
 ---
 title: "Do the Rosling"
 date: "2020-02-26"
+description: "Despite all the bad news we're facing every day, the world is getting better in so many ways."
 heroImage: "images/blog/do-the-rosling/hero.png"
 url: "https://www.juditbekker.com/post/do-the-rosling"
 ---

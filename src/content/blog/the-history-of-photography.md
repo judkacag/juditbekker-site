@@ -1,6 +1,7 @@
 ---
 title: "The history of photography"
 date: "2021-02-15"
+description: "My adventures in fontland continue. This time I used Kodak and Helvetica Neue Thin to make my viz pop."
 heroImage: "images/blog/the-history-of-photography/hero.png"
 url: "https://www.juditbekker.com/post/the-history-of-photography"
 ---

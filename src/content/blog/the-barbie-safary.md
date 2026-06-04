@@ -1,6 +1,7 @@
 ---
 title: "The Barbie Safary"
 date: "2018-04-19"
+description: "Even though I did not come out as a girly girl, my mother was quite successful in planting the very gist of Barbies in my mind forever."
 heroImage: "images/blog/the-barbie-safary/hero.jpg"
 url: "https://www.juditbekker.com/post/the-barbie-safary"
 ---

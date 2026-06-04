@@ -1,6 +1,7 @@
 ---
 title: "Budapest, you have my heart"
 date: "2020-06-19"
+description: "I was pretty active on Pinterest recently, looking for new inspiration, and I came across a beautiful series called City Facts."
 heroImage: "images/blog/budapest-you-have-my-heart/hero.png"
 url: "https://www.juditbekker.com/post/budapest-you-have-my-heart"
 ---

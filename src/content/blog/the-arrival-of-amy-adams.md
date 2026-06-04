@@ -1,6 +1,7 @@
 ---
 title: "The Arrival of Amy Adams"
 date: "2021-07-03"
+description: "Not another movie-themed viz, right? Sorry, but yes, it is. I was trying out some new design perspectives, that evolved into an infographic."
 heroImage: "images/blog/the-arrival-of-amy-adams/hero.png"
 url: "https://www.juditbekker.com/post/the-arrival-of-amy-adams"
 ---

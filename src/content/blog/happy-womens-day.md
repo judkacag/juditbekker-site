@@ -1,6 +1,7 @@
 ---
 title: "Happy Women’s Day!"
 date: "2021-03-08"
+description: "I'm lucky enough that I never felt less than a man and experienced no discrimination. I know it's not the case for all women."
 heroImage: "images/blog/happy-womens-day/hero.png"
 url: "https://www.juditbekker.com/post/happy-women-s-day"
 ---

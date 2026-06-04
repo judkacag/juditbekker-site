@@ -1,6 +1,7 @@
 ---
 title: "Fire walk with me: All the things I watched in 2020"
 date: "2021-01-08"
+description: "My superpower is never being bored — I probably spend the most time watching series (660 episodes of 62 different ones)."
 heroImage: "images/blog/fire-walk-with-me-all-the-things-i-watched-in-2020/hero.png"
 url: "https://www.juditbekker.com/post/fire-walk-with-me-all-the-things-i-watched-in-2020"
 ---

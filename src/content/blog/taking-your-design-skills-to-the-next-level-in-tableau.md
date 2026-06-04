@@ -1,6 +1,7 @@
 ---
 title: "Taking your design skills to the next level in Tableau"
 date: "2020-04-13"
+description: "There are only a few original ideas out there, but there's nothing wrong with stealing with pride and using other people's ideas."
 heroImage: "images/blog/taking-your-design-skills-to-the-next-level-in-tableau/hero.png"
 url: "https://www.juditbekker.com/post/taking-your-design-skills-to-the-next-level-in-tableau"
 ---

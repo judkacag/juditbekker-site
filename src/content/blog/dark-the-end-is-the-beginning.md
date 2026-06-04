@@ -1,6 +1,7 @@
 ---
 title: "Dark: The End is the Beginning"
 date: "2020-06-18"
+description: "For those who are afraid of jumpscares, there's nothing like that in any of the episodes, just pure old tension and mystery."
 heroImage: "images/blog/dark-the-end-is-the-beginning/hero.png"
 url: "https://www.juditbekker.com/post/dark-the-end-is-the-beginning"
 ---

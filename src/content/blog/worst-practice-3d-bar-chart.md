@@ -1,6 +1,7 @@
 ---
 title: "Worst practice 3D bar chart"
 date: "2021-03-16"
+description: "After an exhausting day at work, I started goofing around in Illustrator, and I got way too hooked on text manipulation techniques."
 heroImage: "images/blog/worst-practice-3d-bar-chart/hero.png"
 url: "https://www.juditbekker.com/post/worst-practice-3d-bar-chart"
 ---

@@ -1,6 +1,7 @@
 ---
 title: "My Fallen Kingdom"
 date: "2020-04-23"
+description: "I'm gonna draw the layout of my flat and make a heatmap of what I'm doing where for how long in the apartment!"
 heroImage: "images/blog/my-fallen-kingdom/hero.png"
 url: "https://www.juditbekker.com/post/my-fallen-kingdom"
 ---

@@ -1,6 +1,7 @@
 ---
 title: "How to start building a new dashboard for clients?"
 date: "2020-11-05"
+description: "I collected all the questions that in a dream world I'd like to get answers to before start building a dashboard."
 heroImage: "images/blog/how-to-start-building-a-new-dashboard-for-clients/hero.png"
 url: "https://www.juditbekker.com/post/how-to-start-building-a-new-dashboard-for-clients"
 ---

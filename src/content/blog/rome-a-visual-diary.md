@@ -1,6 +1,7 @@
 ---
 title: "Rome: a visual diary"
 date: "2024-06-06"
+description: "A month ago we went to Rome for a long weekend to see all the beauties the city can offer... and to watch the AS Roma - Juventus game live."
 heroImage: "images/blog/rome-a-visual-diary/hero.jpg"
 url: "https://www.juditbekker.com/post/rome-a-visual-diary"
 ---

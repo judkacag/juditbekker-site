@@ -1,6 +1,7 @@
 ---
 title: "Beer hiking in Berlin"
 date: "2024-03-27"
+description: "Calendar showing March and shy rays of sunlight? That can only mean two things: spring and outdoor drinking are on their way."
 heroImage: "images/blog/beer-hiking-in-berlin/hero.png"
 url: "https://www.juditbekker.com/post/beer-hiking-in-berlin-1"
 ---

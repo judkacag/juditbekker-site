@@ -1,6 +1,7 @@
 ---
 title: "Is Data Visualization dead?"
 date: "2026-04-06"
+description: "I'll keep this tucked-away corner of the internet I call my blog as a graveyard of an era when dataviz was still fun."
 heroImage: "images/blog/2026-04-06-is-data-visualization-dead/hero.png"
 draft: false
 ---

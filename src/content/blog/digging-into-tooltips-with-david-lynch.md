@@ -1,6 +1,7 @@
 ---
 title: "Digging into tooltips with David Lynch"
 date: "2021-04-10"
+description: "The tooltips might not be what they seem, but they deserve to be beautiful too!"
 heroImage: "images/blog/digging-into-tooltips-with-david-lynch/hero.png"
 url: "https://www.juditbekker.com/post/digging-into-tooltips-with-david-lynch"
 ---

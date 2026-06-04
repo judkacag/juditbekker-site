@@ -1,6 +1,7 @@
 ---
 title: "Live-blogging a new project"
 date: "2021-05-04"
+description: "I'm gonna count all the damn fine coffees that were drunk in all 3 series. It's so much content, that my mind might go to the Black Lodge."
 heroImage: "images/blog/live-blogging-a-new-project/hero.png"
 url: "https://www.juditbekker.com/post/live-blogging-a-new-project"
 ---

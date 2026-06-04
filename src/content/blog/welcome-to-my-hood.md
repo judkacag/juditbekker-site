@@ -1,6 +1,7 @@
 ---
 title: "Welcome to my hood"
 date: "2021-02-04"
+description: "It's no secret that I'm a walking love letter to Budapest, but I can't stop being obsessed with it."
 heroImage: "images/blog/welcome-to-my-hood/hero.png"
 url: "https://www.juditbekker.com/post/welcome-to-my-hood"
 ---

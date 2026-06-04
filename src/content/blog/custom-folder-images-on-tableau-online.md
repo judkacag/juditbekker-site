@@ -1,6 +1,7 @@
 ---
 title: "Custom folder images on Tableau Online"
 date: "2023-04-04"
+description: "I had to store my Tableau folder images somewhere, so I figured I write a blog post about how to do it."
 heroImage: "images/blog/custom-folder-images-on-tableau-online/hero.png"
 url: "https://www.juditbekker.com/post/custom-folder-images-on-tableau-online"
 ---

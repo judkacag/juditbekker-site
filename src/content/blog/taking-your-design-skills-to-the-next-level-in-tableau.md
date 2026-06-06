@@ -8,11 +8,11 @@ url: "https://www.juditbekker.com/post/taking-your-design-skills-to-the-next-lev
 
 This writing was originally posted on VizArtPandey.
 
-What’s to know about me?
+## What’s to know about me?
 
 As a dataviz expert, I think that there are only a few original ideas out there, but there’s nothing wrong with stealing with pride and using other people’s ideas. The two principles to follow is to keep crediting and restrain from copying. Using an idea means inspiration, only the twist you add on it can make it yours. I keep a close watch on what’s happening in UI / UX and graphic design, because the trends in these areas are the trends that can make your dashboards sexy. Here are some ideas that I’ve stolen with pride:
 
-Inspiration, My work
+## Inspiration, My work
 
 Sources of inspiration
 
@@ -26,7 +26,7 @@ When it is time to think about color choices, there are tons of options. My pers
 
 I’m also really into gradients recently, maybe it’s just that 90s’ nostalgia, but I think they give a cool effect. I usually hop on to Grabient for the dopest options, but I just saw, there’s a new gradient maker tool added in Adobe Color, watch how awesome this is:
 
-Adobe Color – Extract Gradients
+## Adobe Color – Extract Gradients
 
 What I use the most for generating color palettes, is the Eyedropper tool in Illustrator. If you look at a picture and it looks amazing, it will be a great color choice too. I had a Makeover Monday submission a couple of weeks ago about the correlation of money and happiness, where the whole color palette was based on this main image:
 
@@ -34,7 +34,7 @@ Fonts also  a huge part of great design, too bad that Tableau offers only a few 
 
 When I use images for a dashboard design, Pexels turned out to be my safest option. There are plenty of free stock images there in any topics you can imagine, just make sure to credit the photographer on the viz. Pro tip: I always add this info on a tooltip on a blank page, so that if you hover over the image, you can see who made it.
 
-Always start by sketching
+## Always start by sketching
 
 I have my weirdest dataviz ideas when riding a bike or waking up in the middle of the night because something just came to my mind. My first rule is, that if I’m doing a visualization for fun or Makeover Monday and I can’t make anything original out of it, then I just won’t do it. It’s no good forcing it, there will be plenty of other options that will come naturally.
 

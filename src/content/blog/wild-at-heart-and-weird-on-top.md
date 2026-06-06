@@ -16,11 +16,11 @@ Final visualization
 Viz details
 How to read
 
-Why this viz simmered for 4 months?
+## Why this viz simmered for 4 months?
 
 When this idea popped into my mind, I knew how great this could be and wanted to do it justice. Unfortunately, I’m bad at math. I can do almost everything in Illustrator, but when it comes to drawing charts in Tableau, there are 3 ways for me to go:
 
-Reading tutorials
+## Reading tutorials
 
 Asking Pisti (mentioned above) for help
 
@@ -30,11 +30,11 @@ Remember when I had this tweet months ago? It was for this idea.
 
 Okay, you can tell me this is not what I ended up with, and you’re totally right. It’s because I realized a circular Gantt chart is a great starting point but not a goal. So this time I did something I’ve never done before… I sweated the calcs out. I proudly present this ONE chart I made solely in Tableau.
 
-The main chart in Tableau
+## The main chart in Tableau
 
 The inspiration for the shapes came from a random googling this morning. Here’s the original picture I came across and all the shapes I generated (and ended up not using) next to it.
 
-Shapes and colors
+## Shapes and colors
 
 After getting all this done and pasting them to my Tableau repository, the only thing left was to add the background. I went for an elegant font called Dancing Script from Google Fonts and a minimal design that lets the chart stand out.
 

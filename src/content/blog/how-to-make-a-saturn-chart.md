@@ -10,13 +10,13 @@ There might have been a thousand tutorials about this chart but I was too lame t
 
 Final visualization
 
-Step 1: Setting up the data the right way
+**Step 1: Setting up the data the right way**
 
 To check what happens through the movie, the first step was to create a line for every second. The same result can be achieved by a join but it made sense to me to save that step. The duration of the film is 2:05:01, so I ended up with 7507 lines of data (most of them empty). After this, I needed to come up with the events I wanted to track. I used four categories: singing, smoking, violence (sometimes called brutality), and sex. I assigned an index value to all the rows but made sure to add the same index for the same events. This way, I ended up with 7507 rows but only 7502 unique indexes. You can check my logic marked yellow in the table below:
 
-Dataset filtered down to the rows where the ‘What’ field is not null
+## Dataset filtered down to the rows where the ‘What’ field is not null
 
-Step 2: Creating the calculations
+**Step 2: Creating the calculations**
 
 I wanted the data to have a circular shape, so at first, I had to know how many pieces I need to ‘cut’ my circle into. I called this calculation densification, 7502 is the number of unique indexes I had. Again, this is something that could’ve been calculated and would’ve looked more elegant.
 
@@ -57,14 +57,14 @@ ELSEIF MIN([What]) = 'brutality' then 3
 ELSE 2
 END
 
-Step 3: Table calculations
+**Step 3: Table calculations**
 
 Here came the fun part! The only thing left was adding the right fields to the right marks and fine tuning table calculations. I placed duration transform to the size card, SECOND(Time), Who (group), and What to the Details, and shape transform to the Shapes card.
 
-Right fields on the right marks
+## Right fields on the right marks
 
 The x and y calculations are placed on Columns and Rows, and the table calculation should be set up this way:
 
-Table calculation
+## Table calculation
 
 Hope this tutorial helps you to create a chart similar to mine, in case you have any questions just drop me a message. I cover the design aspects of this visualization in a previous post.

@@ -10,7 +10,7 @@ A couple of weeks ago I made a simple (yet complicated) visualization in Tableau
 
 I learned the hard way that you should use images carefully when it comes to sensitive topics, but as the girl in the picture is not recognizable I think it’s safe to use this photo to emphasize an important issue. The pic was taken by Andrea Piacquadio and downloaded from Pexels. The first edit I did is to add a little more space to the right of the figure. It’s an easy step to do in Photoshop, you just have to “crop it bigger” while ticking in the Content-Aware box.
 
-Content-Aware Cropping in Photoshop
+## Content-Aware Cropping in Photoshop
 
 Original image
 
@@ -28,9 +28,9 @@ This is where the tricky part came because I had to duplicate the photo and remo
 
 After spending some time making the hair selection as good as possible (but still not great), this is what I ended up with. I added the png version of the girl on top of the bar chart in Tableau.
 
-Duplicating the image with the Select and Mask tool
+## Duplicating the image with the Select and Mask tool
 
-Adding the png version of the girl on top of the bar chart
+## Adding the png version of the girl on top of the bar chart
 
 As I wanted to have that censored effect to cover her eyes, I added another bar chart using only the second bar, that I made the same width, but increased the height to achieve this effect.
 
@@ -44,6 +44,6 @@ Labels in Illustrator placed on top of the “female” bar chart
 
 The last thing to do was replicating the original bar chart with 0% opacity that I placed on top. It had the same coordinates (x, y, w, h) as the chart below to be able to show the tooltips.
 
-3 in 1 bar chart
+## 3 in 1 bar chart
 
 Hope you enjoyed this tutorial, I got hooked up with the Illustrator – Photoshop – Tableau trinity, so brace yourselves for similar contents coming soon!

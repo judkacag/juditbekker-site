@@ -24,4 +24,4 @@ Background made in Illustrator
 
 After that, I created an Excel file of all the activities I do at home on an average day (size means the time spent) and added the X & Y coordinates to have the scatterplot. This was the hardest part, as I gave an estimated value to all of them, but had to adjust the bubbles one by one. After 40 minutes of finetuning it, this is the outcome:
 
-Tableau + Illustrator
+## Tableau + Illustrator

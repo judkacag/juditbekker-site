@@ -10,33 +10,33 @@ On Friday, Steven Shoemaker dared me to make a map-centered viz. It was like he�
 
 Final visualization in Tableau
 
-What is #DataDare?
+## What is #DataDare?
 
 Zach Bowders (who else) came up with the idea to create a dataviz chain letter by daring each other. It started with the three of us, Zach dared Steven, Steven dared me, and I dared Zach to make something new. After posting our visualization, we can challenge someone else from the Tableau community to keep the game alive. I wonder if I was too hard on Zach with the task to make a viz that looks like it’s from the 19th century, but I’m quite sure he can manage this. He explained the mechanism of #DataDare in a tweet – go check it out.
 
-Phase 1: Panicking
+**Phase 1: Panicking**
 
 Where to start? I had no clue. No idea, no dataset, no design inspiration. Nothing. I turned to the datafam to spoil me with some great examples, so if you’re planning to make a map, this is a thread to follow. We were avoiding each other for such a long time with Mapbox that the only thing I was sure of is the tool. So I opened the studio and had some desperate efforts at making something that makes me feel satisfied.
 
 Too colorful, too busy, too vivid – they are not my style. Not to speak about the fact that I didn’t manage to make a seamless pattern as a background. And again, I didn’t have the data to adjust the style of the map. So I decided to take a U-turn and find something that I like and then search for data. That’s how I picked Iceland! I made an infographic about the country a few years back, and I’m fascinated by the Icelandic landscape (on my travel bucket list for a long time), so the most obvious choice was: volcanos.
 
-Phase 2: Styling for data
+**Phase 2: Styling for data**
 
 I wanted to achieve a subtle look that the volcanos would shine through. In the end, I only used a few layers within Mapbox to have my final look. I had a bright grey background, added the ‘mapbox-terrain-rgb’, the landcover, the contour, and a couple of hillshade layers. As Jonni pointed out in his webinar, I duplicated the hillshade layer a couple of times and shifted them to make the shadow effect visible.
 
-Iceland in Mapbox Studio
+## Iceland in Mapbox Studio
 
-Phase 3: Gathering the data
+**Phase 3: Gathering the data**
 
 At first, I thought it would be the easiest part of the process. I found a website where there was a list of all the volcanos with a lot of additional data. I collected the data manually, which took like 1.5 hours, but then came the surprise. Tableau showed an entirely different picture of the location of the volcanos than the map on the page (as if they were shifted 20 pixels in a random direction). That’s when I realized that the coordinates were wrong, and I had to search for them one by one.
 
-Phase 4: Styling in Tableau
+**Phase 4: Styling in Tableau**
 
 Finally, the fun part! I had this idea to use a buffer calculation for the first time to show a 20 km distance around the crater of the volcanos. I converted the locations to points so that I could make the buffer calculation and switched them to shapes that showed tiny fires. I toned down the colors by decreasing the opacity. I then created a dual-axis map to visualize both, and there it was. Since it was the first time for a lot of things, I decided to add a parameter action to show the names of volcanos on hover.
 
-Points and buffers in Tableau
+## Points and buffers in Tableau
 
-Phase 5: Unexpected errors and exporting SVG images
+**Phase 5: Unexpected errors and exporting SVG images**
 
 At first, I thought I’d make the background of the map transparent and then add the texts to the canvas as I always do. But even though all the colors were turned off, when I created the dual axis map, row-band-like lines showed up on the chart. I tried to get rid of them for hours without any success. So I decided to add a background color to the map (which miraculously made the lines disappear) and do something with my image that I intended to use as the first layer that shows under the transparent chart. The solution was to add the texts and labels as SVG so that the quality won’t get crappy.
 

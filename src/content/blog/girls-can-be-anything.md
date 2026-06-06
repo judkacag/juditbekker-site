@@ -10,7 +10,7 @@ I’m not a girly girl, but I’m obsessed with Barbie and love everything they 
 
 This time I had a look at all the careers she had over the past 60 years. Did you know she had more than 200 jobs? You can see for yourself in the interactive version on Tableau Public, but keep on reading if you’re interested in the why and how. If you want to create a viz about the topic, I uploaded both my Barbie careers and Barbie network datasets to data.world.
 
-How it’s going
+## How it’s going
 
 I collected the data for my visualization mainly from Wikipedia, but I had to fire up the Google engines to fill the holes. I love how the positioning of Barbie has changed over time from traditional jobs like a fashion model, stewardess, or secretary to basically anything. In 1965 the astronaut Barbie came out, four years before Neil Armstrong set foot on the moon. You can see that before the ’90s, there were some occasions where she put her modeling career aside, but that was quite rare. Since then, it’s hard to find more inspirational toys for little girls than Barbie, as they live up to their slogan that “girls can be anything”.
 
@@ -20,9 +20,9 @@ Final visualization on Tableau Public
 
 I tried to make this design work with my eternal font love, Futura, but it didn’t seem to work here. So I temporarily had to put it aside and used SignPainger for the titles and Arial Narrow for the text. The other unusual thing here is the use of pastel colors that I’m not that much of a fan of, but I seem to enjoy the looks since my Fire walk with me visualization. However, I’m sure it’s a passing thing.
 
-Tooltips
+## Tooltips
 
-How it started
+## How it started
 
 I really hope that the Data Visualization Designer Barbie is already on its way because let me tell you, that’s a perfect career path for any little girl. Look at the BI Barbie in the ’90s living her highest life:
 

@@ -14,7 +14,7 @@ Final dashboard design in Tableau
 
 I might not be the best Tableau technical specialist in the world, but my main drive is conveying straightforward messages in a clear and minimalistic way. When I’m doing visualizations for fun, design is my №1 principle to follow. I usually combine Tableau with Adobe Illustrator to predesign the background and add it back to the software as an image. This way I have better control over the look and feel of the dashboard and don’t have to load all the texts and images one by one. The other thing is, that at the end of last year I listened to a TED talk about the rise of the Futura typeface after being used on the Apollo 11 mission. I fell so much in love with it, that if I have to choose only one font to use till the end of my life, I’d say Futura in a blink of an eye. Too bad Tableau only supports just a couple of web safe options, so one more reason to stick with Illustrator.
 
-Breaking up the steps of creating this visual
+## Breaking up the steps of creating this visual
 
 When I need inspiration or just have a couple of minutes to feed my eyes with quality content, I always end up on Pinterest. A couple of days ago I saw Nadine Fauzia’s portfolio and in 5 seconds I knew that this would be the basis of my Rosling viz.
 
@@ -22,7 +22,7 @@ Nadine Fauzia’s portfolio
 
 The next step was to draw my wireframe, which I always do on paper. I know it looks trashy, but literally takes 2 minutes and you have your skeleton for the whole project to start building the design.
 
-Hand-drawn wireframe
+## Hand-drawn wireframe
 
 Then the only thing before jumping into Tableau was to put together the high fidelity background in Illustrator.
 

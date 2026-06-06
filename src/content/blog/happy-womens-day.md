@@ -14,7 +14,7 @@ You can check out the interactive version on Tableau Public and read on for the 
 
 Final design in Tableau Public
 
-The inspiration behind the design
+## The inspiration behind the design
 
 Last week was my first one at my new job, and I was so tired every day that I felt I won’t ever have the energy to make visualizations for fun again. I scheduled a lot of to-do-s for the weekend and ended up doing none of them. Saturday night, I saw this editorial design on Pinterest, and I had the idea to jump on the bandwagon and make a viz for Women’s Day.
 
@@ -38,6 +38,6 @@ You can double-check with a simple line chart if the curved line looks as it sho
 
 When I decreased the opacity of the area chart to 60%, thin lines started to appear. I realized this is because the segments overlap a bit. Toan suggests fixing the axis from -6 to 6, but I found mine to look the best from -5.55 to 5.55. Let me show you the difference:
 
-Left: -6 to 6 axis, Right: -5.55 to 5.55 axis
+## Left: -6 to 6 axis, Right: -5.55 to 5.55 axis
 
 Thanks for reading, tune in for more data adventures!

@@ -18,6 +18,6 @@ Our favorite game was called one-time hide & seek. We all hid somewhere, and gra
 
 She died 12 years ago, but I still think about her every day. I guess I loved her so much because she never got old. The portrait of her grandma that hung over the Bösendorfer hangs on my wall now. Honestly, look how freaking cool my grandparents were:
 
-How did I come across this idea?
+## How did I come across this idea?
 
 I saw a Chopin poster on Pinterest, where the columns seemed like a piano, and the idea clicked instantly. In case you wonder if there’s an easy way to transform your bar charts into a piano, I have to disappoint. There isn’t. I formatted all 53 manually, and my brain was about to explode after 10, but I wanted to see the end result so bad that I needed to carry on. I won’t consider this visualization my favorite because it doesn’t scream “me” – but I’m happy I made it.

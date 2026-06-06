@@ -6,7 +6,7 @@ heroImage: "images/blog/part-1-p5js-adventures/hero.jpg"
 url: "https://www.juditbekker.com/post/part-1-p5-js-adventures"
 ---
 
-First steps first
+## First steps first
 
 Get a friend like @istvankorompai, who’ll always tell you what’s the new shit and get you hyped beyond hyped.
 
@@ -14,19 +14,19 @@ Make up your mind to start in January for several reasons. New Year’s resoluti
 
 Come up with a project you can redo as an end goal to utilize what you’ve learned and feel accomplished. Again, this was Pisti’s idea because that’s how golden he is.
 
-Getting started
+## Getting started
 
 At the end of last year, I got a Codecademy pro account since, after the past few years of nonstop creating, I wanted to focus on learning new things so I could find joy in creating again. After two months I could say that this is probably the best thing to spend $120 on. p5.js is a JavaScript library, and to get started, you need three components: HTML, CSS, and JavaScript basics. I’d say I had an okayish knowledge of the first two but was blank on JavaScript, so I came up with a plan. I decided to start a blank page and turn this into a boot camp. If I find some parts too easy, at least that would boost my confidence.
 
-Learn HTML
+## Learn HTML
 
-Learn CSS
+## Learn CSS
 
-Code Foundations
+## Code Foundations
 
-Learn JavaScript
+## Learn JavaScript
 
-Learn p5.js
+## Learn p5.js
 
 * Apart from Code Foundations (which is a nice to have anyway), all the courses are available in the free plan. However, bear in mind that they might not be complete. As I recall, parts of it are hidden, and the exercises are not there.
 
@@ -54,19 +54,19 @@ The Coding Train youtube channel – if you want to understand what you’re doi
 
 xin xin’s youtube channel – her solutions often lead to my solutions (after 34 trials & errors)
 
-Jumping into my first solo project
+## Jumping into my first solo project
 
 Over the weekend, I spent 10+ hours recreating my most recent viz in p5.js. I don’t know how I don’t hate this one already since I did it once in Tableau (if you’re interested in building it in Tableau, check out this post), then in Illustrator to convert it to a high-res image for prints. But hey, three times a charm!
 
-Viz coded in p5
+## Viz coded in p5
 
-Viz in Tableau / Illustrator
+## Viz in Tableau / Illustrator
 
 I’m shocked and extremely proud at the same time that I managed to pull this off. I even understand 90% of what I’m doing! On Friday, I thought this might be a project I’ll be sitting on for a year, so I don’t think anyone could clear that smile from my face for at least a week. It’s still yet to reach its full potential since we’re planning to animate it with Pisti as a mini-project that I’ll hopefully cover in part 2.
 
 You can check out the code by clicking on the ‘</>’ sign on the top right corner on the p5 web editor or Github.
 
-All the things I learned in 2 days
+## All the things I learned in 2 days
 
 you can publish a Google Sheet as csv to the web
 

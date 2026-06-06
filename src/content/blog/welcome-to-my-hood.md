@@ -14,7 +14,7 @@ I saw some beautiful map prints on Etsy, and I wanted to recreate a similar look
 
 After I finished styling my map, the next step was collecting the data. Maybe I’m the last person on Earth who discovered this, but did you know that if you right-click on any points on Google Maps, it will give you the coordinates? If the answer is no, have a look below. This is magic!
 
-Right-clicking on a point in Google Maps
+## Right-clicking on a point in Google Maps
 
 The next obstacle was making my map round-shaped. I know I’d need to use layers to do that, and not just because I’m obsessed with layers in Tableau, but there’s really no other way. The first step was making an image in Illustrator that has a “hole” in the middle. When you put this image onto your canvas, it looks like just what you’re aiming for, but there’s this one big disadvantage. The map loses interactivity because of the see-through image you placed over it.
 

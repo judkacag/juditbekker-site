@@ -8,18 +8,20 @@ url: "https://www.juditbekker.com/post/part-2-p5-js-on-the-move"
 
 During the past week, I concentrated on making shapes move in p5. I can tell it’s much easier to work with static elements only! Once I figure out how I can embed a javascript code snippet here I'll do it, until then you have to click on links to see the end-result.
 
-Project 1: Wild at Heart
+**Project 1: Wild at Heart**
 
 I guess I didn’t choose the easiest exercise to start with. After I recreated my Wild at Heart viz, I wanted to add some subtle moving elements: making some shapes breathe, rotations around their center, and changing the position of gradients. The code ended up more than 500 lines which you could check out on GitHub. Here, I’ll just highlight the most interesting parts. To see it move, hop over to the p5.js web editor.
 
-Saving the sketch as an image
+## Saving the sketch as an image
 
 One of my favorite functions I learned is how to download the current screen as png/jpg by hitting enter – this is how I got the below image. You can further customize it by adding the frameCount to its name (like I did in the other project):
 
 // Pressing the enter will download as png
 
+```javascript
 function keyPressed() {
 if (keyCode === 13) {
+```
 saveCanvas('wildAtHeart', 'png');
 }
 }
@@ -32,11 +34,11 @@ To set up the image in a static way, I put most of the elements I wanted to keep
 
 The push() function saves the current drawing style settings and transformations, while pop() restores these settings. Note that these functions are always used together. They allow you to change the style and transformation settings and later return to what you had. When a new state is started with push(), it builds on the current style and transform information. The push() and pop() functions can be embedded to provide more control.
 
-Rotating simple shapes
+## Rotating simple shapes
 
 The next thing I tacked is rotating the tiny rectangles. This challenge caused a lot of headaches, it took me days to figure out how not to move the whole circle around the canvas and make them stay put. The solution was right in front of my eyes the whole time: it’s the marriage of the translate function and my beloved push() / pop() combo. It’s crucial to set the rectMode to CENTER (instead of the default CORNER) because instead of the top-left corner, the x & y coordinated will be in the center of the shape. Now you have to translate the coordinates to x & y and change the original coordinates of the rectangle to 0. The only thing left is to add rotation, for which I used a fragment of frameCount – because if the speed = frameCount, it would be super quick, and I needed a slower pace.
 
-What is frameCount?
+## What is frameCount?
 
 The system variable frameCount contains the number of frames that have been displayed since the program started. Inside setup() the value is 0, after the first iteration of draw it is 1, etc.
 
@@ -45,11 +47,13 @@ Code to rotate the tiny rectangle in the outside circle:
 // Violent scenes
 
 push();
+```javascript
 for (let r = 0; r < table.getRowCount(); r++) {
 const activity = table.getString(r, 2);
 const angle = table.getNum(r, 12);
 let x = outerCircleWidth / 2 * cos(radians(angle)) + width/2;
 let y = outerCircleWidth / 2 * sin(radians(angle)) + height/2;
+```
 noStroke();
 fill(260, 0, 45, 100);
 if (activity === 'brutality') {
@@ -62,14 +66,16 @@ pop();
 }
 }
 
-Rotating gradient colors
+## Rotating gradient colors
 
 First of all, this was the function I wrote to display the color gradients:
 
 // Function for fill gradient
 
+```javascript
 function linearGradientFill(sX, sY, eX, eY, colorS, colorE) {
 let gradient = drawingContext.createLinearGradient(
+```
 sX, sY, eX, eY
 );
 gradient.addColorStop(0, colorS);
@@ -79,6 +85,7 @@ drawingContext.fillStyle = gradient;
 
 And this is the example I applied to the Lula smoking bubbles. A tiny bit more complicated than moving the rectangle but the same method. Inside a push() and pop() duo, you have to translate the coordinates to x and y and change these original values to 0 in the ellipse function and the start-stop color coordinates. The way I forced the lines to move within a circle is almost a copy of this, so I’ll save some space here by not copying that snippet and letting you discover on GitHub if you’re interested.
 
+```javascript
 for (let r = 0; r < table.getRowCount(); r++) {
 const name = table.getString(r, 1);
 const activity = table.getString(r, 2);
@@ -86,6 +93,7 @@ const angle = table.getNum(r, 12);
 const duration = map(table.getNum(r, 6), 1, 294, mapWidthMin, mapWidthMax);
 let x = middleCircleWidth / 2 * cos(radians(angle)) + width/2;
 let y = middleCircleWidth / 2 * sin(radians(angle)) + height/2;
+```
 noStroke();
 fill(1);
 push();
@@ -102,21 +110,25 @@ ellipse(0, 0, duration, duration);
 }
 pop();
 
-Breathing bubbles
+## Breathing bubbles
 
 If you open the p5.js web editor link, you can see that those tiny ellipses in the inner circle change their size between a minimum and a maximum value that I (and maybe a bunch of others) called breathing. In the below code, you can see that the minimum diameter value is 5, the maximum is 12. What happens here is that if the current diameter value is less than 12, with every iteration, 0.05 will be added to it until it reaches the maximum value. At that point, it will be decreased by the same increment (0.05) with every iteration until it reaches 5 – the minimum value. And then the whole cycle starts again. This was by far the easiest movement feature to implement, but it’s also my favorite one.
 
+```javascript
 // Bubble variants
 var diam = 5;
 var change = 0.05;
+```
 
 // Sex scenes
 
+```javascript
 for (let r = 0; r < table.getRowCount(); r++) {
 const activity = table.getString(r, 2);
 const angle = table.getNum(r, 12);
 let x = innerCircleWidth / 2 * cos(radians(angle)) + width/2;
 let y = innerCircleWidth / 2 * sin(radians(angle)) + height/2;
+```
 noStroke();
 fill(260, 0, 45, 100);
 if (activity === 'sex') {
@@ -130,7 +142,7 @@ ellipse(x, y, diam, diam);
 }
 }
 
-Project 2: Bouncy Bauhaus Balls
+**Project 2: Bouncy Bauhaus Balls**
 
 The Bauhaus Bouncy ball project was inspired by a poster on posterlad.com – see the first image below. The one to the left is what I made in p5.js and downloaded it as png (as mentioned above). You can check out the moving version on the web editor, the code is available on GitHub as well, or you can watch that poor-quality Youtube video I linked below.
 

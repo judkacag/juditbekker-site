@@ -10,11 +10,11 @@ The last time I created a new viz was nine long months ago. I got sucked into wo
 
 All scenes where the main characters are present (Mark S., Helly R., Irving B., Dylan G.) and whether they appear as their Innie or Outie (among a dozen of other things)
 
-Complete location tracking from the first scene to the last
+## Complete location tracking from the first scene to the last
 
 Tracking Severance was not an easy subject. I tried not to overcomplicate it, but it’s crucial to mention the methodology I followed during the collection process.
 
-How did I track scenes?
+## How did I track scenes?
 
 When someone is alone in a scene, the start timestamp is when they first appear, and the last is when we no longer see them. When the scene itself continues, but there’s a cut in-between – for example, we’re at Lumon watching Mark, but suddenly there’s a cut showing Ms. Selvig’s house, then we go back to seeing Mark) – those are counted as separate scenes.
 
@@ -26,11 +26,11 @@ Final version
 
 Inspiration & wireframe:
 
-Color choice
+## Color choice
 
 I wouldn’t say that I’m madly in love with the chosen colors, but these are so significant in the show I couldn’t do otherwise. I tried not to oversaturate but at the same time give that Severance feeling back. I selected a couple of screenshots (Severance color palette on Reddit) to source the colors from:
 
-The challenge
+## The challenge
 
 Long gone the times, I enjoyed doing something I already did, but it’s hard to come up with new styles/chart types at a regular cadence. I finished the data collection a few days ago and had no idea what to do with it. Then I decided it was time to dust off that circular gantt chart idea and spice it up by just showing one quarter. To me, it looks like a clock that shows the time from 3 to 6, where the main characters are both present as Innies and Outies.
 
@@ -40,14 +40,14 @@ It quickly turned out that it’s not enough to know the start and end point of 
 
 The reason for that, was the wrong order of points, but there came Pisti to save this chart. He changed my table calculations to LoDs and wrote a monster calculation for the point order. The workbook is downloadable to see for yourself how we built the calcs. Let’s hope one day he will write a tutorial on the topic. But the curved gantt chart did happen after all!
 
-Receiving feedback
+## Receiving feedback
 
 I don’t usually ask for feedback because by the time I finish a visualization, I already settle on a design. But in this case, I did seek advice, and even if I had to implement some changes to make it more logical and readable, it totally worth it. I first talked to a fellow Severance fan, Anne-Sophie Pereira De Sá, who pointed out my inconsistent color usage. She was 100% right – following our discussion, I changed the Lumon color coding to green instead of the blue on the location tracker chart, and Helly’s escape attempts orange on the curved bar.
 
 And then I posted it on the Severance subreddit, where the lawful reddit police called out that Dylan did wake up as an Outie during the Overtime Contingency protocol. I checked the data, and again, they were right. I fell into the trap of rounding, but that 14 sec had to get justice. They also pointed out that my Futura font does not match the style of the show, so I changed it to SF Pro, which I believe is closer to the original Severance typeface.
 
-The viz before receiving feedback
+## The viz before receiving feedback
 
-The viz after feedback
+## The viz after feedback
 
 If you still don’t feel convinced to watch the show, here’s the single best moment of recent television history:

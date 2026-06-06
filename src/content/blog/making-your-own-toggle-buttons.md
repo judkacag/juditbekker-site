@@ -12,7 +12,7 @@ Final design in Illustrator
 
 Wanna know how to make your own Toggle buttons using Illustrator? Here comes an easy tutorial for you!  (By the way, the same can be done in Figma, I’m just more comfortable using AI.)
 
-How to make your own toggle buttons?
+## How to make your own toggle buttons?
 
 At first, you have to draw a rectangle, that would be the slider of your button. You’ll see four circles appearing in the corner, and the only thing you have to do is grabbing one of them and start moving it inwards until the radius reaches the total (changes to red).
 
@@ -22,7 +22,7 @@ Using gradients in Illustrator
 
 What comes next is adding the shadows. A common mistake, that a lot of people add too dark shadows, while it’s best to operate with a more subtle one (color: #878787). Here’s what I use as a best practice:
 
-My default drop shadow settings
+## My default drop shadow settings
 
 To have the toggle button ready, I drew an ellipse and added the same drop shadow, plus made some design elements to emphasize that it’s my “day mode” button. To make it easier, I already had my gradient prepared and I just used the Eyedropper tool to catch those colors at the end. Here’s a video of the whole process:
 

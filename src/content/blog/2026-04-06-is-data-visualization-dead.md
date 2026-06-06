@@ -12,7 +12,10 @@ The idea to dive deeper into this topic came from the fact that I recently came 
 
 So then, I wandered through my website, and the question hit me: Am I the Stonehenge still standing in the world of AI, where agents have their own social media? Everything I've written here on this tucked-away corner of the internet seems like it was created in a different lifetime, while I was just rebranding everything a year ago. Outdated as it may seem, I'll keep this blog up as a memento or graveyard of an era when output was still linked to hard work. 🪦
 
-![Screenshot of the replacement risk tool results](/images/blog/2026-04-06-is-data-visualization-dead/screenshot-2.png)
+<div class="image-gallery">
+  <img src="/images/blog/2026-04-06-is-data-visualization-dead/hero.png" alt="Replacement risk tool — juditbekker.com" />
+  <img src="/images/blog/2026-04-06-is-data-visualization-dead/screenshot-2.png" alt="Replacement risk tool — LinkedIn" />
+</div>
 
 I've been doing this for so long that the first-ever version of Tableau I downloaded was 9.2, in 2016. There were a lot of exciting updates, products, and enhancements in the dataviz landscape until it suddenly stopped being fun around 1-2 years ago, and at least in my case, the scapegoat was AI. I always felt that storytelling as a hobby is based on that flex, that **YOU can calculate this. YOU can come up with this crazy idea. YOU can hack the system until it does what you've imagined.** I remember spending nights awake, refusing to go to sleep until that chart bent exactly how I wanted it to bend. That needed brainwork, resilience, passion, dedication... and came with the high reward that you've accomplished something that didn't seem possible, and you're the first to do it. I feel old saying this, but those were the times! 👵🏻
 

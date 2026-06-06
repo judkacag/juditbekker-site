@@ -12,13 +12,22 @@ My biggest struggle, though, was the effort this project needed. I pulled off so
 
 Here's the final visualization! Check out the interactive version on [Tableau Public](https://public.tableau.com/app/profile/judit.bekker/viz/MyCapsuleWardrobeChart/Dashboard1). If you're feeling inspired to whip up something similar or just want to put together a mekko chart, you can also download the workbook.
 
-![The final version of the visualization](/images/blog/my-capsule-wardrobe-chart/final-visualization.png)
+<figure>
+  <img src="/images/blog/my-capsule-wardrobe-chart/final-visualization.png" alt="The final version of the visualization" />
+  <figcaption>The final version of the visualization</figcaption>
+</figure>
 
 This year taught me how important pen & paper notes are in my life. They are not only good for ranting and venting, but also for planning purposes, gathering ideas, and keeping myself accountable. I started a dataviz journal to jot down my thoughts, possible projects, design ideas, and just to have somewhere to sketch. This is exactly how this visualization came to life as well.
 
 <div class="image-gallery">
-  <img src="/images/blog/my-capsule-wardrobe-chart/journal-page-1.png" alt="Journal page 1" />
-  <img src="/images/blog/my-capsule-wardrobe-chart/journal-page-2.png" alt="Journal page 2" />
+  <figure>
+    <img src="/images/blog/my-capsule-wardrobe-chart/journal-page-1.png" alt="Journal page 1" />
+    <figcaption>Journal page 1</figcaption>
+  </figure>
+  <figure>
+    <img src="/images/blog/my-capsule-wardrobe-chart/journal-page-2.png" alt="Journal page 2" />
+    <figcaption>Journal page 2</figcaption>
+  </figure>
 </div>
 
 ## Establishing my wardrobe rules
@@ -41,15 +50,24 @@ Based on my initial sketches, I decided that the width of the bar would be the n
 
 * The HEX codes of each piece are taken from the pictures of the clothes, apart from the black and white ones that are uniform _(call me crazy, but I do have a Pinterest board with most of my wardrobe uploaded, so this wasn't too much of an effort)_.
 
-![Enlarged instructions on how to read the chart - and to illustrate the rules I set for myself](/images/blog/my-capsule-wardrobe-chart/chart-reading-instructions.png)
+<figure>
+  <img src="/images/blog/my-capsule-wardrobe-chart/chart-reading-instructions.png" alt="Enlarged instructions on how to read the chart" />
+  <figcaption>Enlarged instructions on how to read the chart - and to illustrate the rules I set for myself</figcaption>
+</figure>
 
-![My very 2024 Clueless-style Pinterest board where I store almost my entire wardrobe](/images/blog/my-capsule-wardrobe-chart/pinterest-wardrobe-board.png)
+<figure>
+  <img src="/images/blog/my-capsule-wardrobe-chart/pinterest-wardrobe-board.png" alt="My very 2024 Clueless-style Pinterest board where I store almost my entire wardrobe" />
+  <figcaption>My very 2024 Clueless-style Pinterest board where I store almost my entire wardrobe</figcaption>
+</figure>
 
 ## Data collection
 
 I knew from the very beginning that I wanted the main chart to be a Marimekko or a Mosaic plot _(the one that seems like a bar chart, but on top of the x and y values it has a size attribute as well)_, but I didn't expect it to be such a pain in the ass to create and maintain on the data side. I had three tabs in Google Sheets: an inventory of clothes, a weather register, and a change tracker. Logging data to the first two was a piece of cake, but the tracker caused a lot of headaches. I'm sure there would've been a better way to structure and enter the data, but when it finally worked, I was too happy to question it, and then I was too deep in it already. This is how it looked in Google Sheets; imagine you realize at Change ID 82 you made a mistake in Change ID 4 and it all trickles down _(yes, this happened multiple times)_.
 
-![Change tracker in Google Sheets](/images/blog/my-capsule-wardrobe-chart/google-sheets-change-tracker.png)
+<figure>
+  <img src="/images/blog/my-capsule-wardrobe-chart/google-sheets-change-tracker.png" alt="Change tracker in Google Sheets" />
+  <figcaption>Change tracker in Google Sheets</figcaption>
+</figure>
 
 Would I recommend anyone to follow suit and complete a similar project? Absolutely not, I'd rather count all my hairs than do this again.
 

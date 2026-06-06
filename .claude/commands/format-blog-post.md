@@ -36,15 +36,29 @@ Produce the complete updated markdown file:
 - `> blockquote` for pull quotes
 - `## Heading` / `### Sub-heading` matching Wix H2/H3 levels
 - `[anchor text](url)` for all hyperlinks found in the body
-- Single image: `![descriptive alt text](/images/blog/{slug}/filename.ext)`
+- Single image without caption: `![descriptive alt text](/images/blog/{slug}/filename.ext)`
+- Single image with caption:
+  ```html
+  <figure>
+    <img src="/images/blog/{slug}/filename.ext" alt="descriptive alt text" />
+    <figcaption>Caption text from Wix</figcaption>
+  </figure>
+  ```
 - **Multiple images displayed side-by-side or in a gallery on Wix:**
   ```html
   <div class="image-gallery">
-    <img src="/images/blog/{slug}/image1.ext" alt="..." />
-    <img src="/images/blog/{slug}/image2.ext" alt="..." />
+    <figure>
+      <img src="/images/blog/{slug}/image1.ext" alt="..." />
+      <figcaption>Caption 1</figcaption>
+    </figure>
+    <figure>
+      <img src="/images/blog/{slug}/image2.ext" alt="..." />
+      <figcaption>Caption 2</figcaption>
+    </figure>
   </div>
   ```
-- **Multiple images stacked vertically on Wix:** use separate `![]()` lines
+  Omit `<figure>`/`<figcaption>` wrappers inside the gallery if the images have no captions.
+- **Multiple images stacked vertically on Wix:** use separate `<figure>` blocks (or `![]()` lines if no captions)
 
 Preserve all paragraph text word-for-word. Do not invent or summarise content.
 

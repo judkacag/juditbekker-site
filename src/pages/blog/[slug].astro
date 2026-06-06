@@ -126,6 +126,20 @@ function formatDate(dateStr: string) {
     display: block;
   }
 
+  .post-body :global(figure) {
+    margin: 1.5em 0;
+  }
+
+  .post-body :global(figure img) {
+    margin: 0;
+  }
+
+  .post-body :global(figcaption) {
+    font-size: 0.85em;
+    color: var(--color-muted);
+    margin-top: 0.4em;
+  }
+
   .post-body :global(.image-gallery) {
     display: flex;
     gap: 12px;
@@ -137,6 +151,16 @@ function formatDate(dateStr: string) {
     min-width: 0;
     margin: 0;
     object-fit: cover;
+  }
+
+  .post-body :global(.image-gallery figure) {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+  }
+
+  .post-body :global(.image-gallery figure img) {
+    width: 100%;
   }
 
   .post-body :global(ul), .post-body :global(ol) {

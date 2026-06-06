@@ -36,6 +36,7 @@ Produce the complete updated markdown file:
 - `> blockquote` for pull quotes
 - `## Heading` / `### Sub-heading` matching Wix H2/H3 levels
 - `[anchor text](url)` for all hyperlinks found in the body
+- Bullet lists: `* item` with no blank lines between items; numbered lists: `1. item`
 - Single image without caption: `![descriptive alt text](/images/blog/{slug}/filename.ext)`
 - Single image with caption:
   ```html

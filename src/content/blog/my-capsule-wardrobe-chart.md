@@ -16,9 +16,10 @@ Here's the final visualization! Check out the interactive version on [Tableau Pu
 
 This year taught me how important pen & paper notes are in my life. They are not only good for ranting and venting, but also for planning purposes, gathering ideas, and keeping myself accountable. I started a dataviz journal to jot down my thoughts, possible projects, design ideas, and just to have somewhere to sketch. This is exactly how this visualization came to life as well.
 
-![Journal page 1](/images/blog/my-capsule-wardrobe-chart/journal-page-1.png)
-
-![Journal page 2](/images/blog/my-capsule-wardrobe-chart/journal-page-2.png)
+<div class="image-gallery">
+  <img src="/images/blog/my-capsule-wardrobe-chart/journal-page-1.png" alt="Journal page 1" />
+  <img src="/images/blog/my-capsule-wardrobe-chart/journal-page-2.png" alt="Journal page 2" />
+</div>
 
 ## Establishing my wardrobe rules
 

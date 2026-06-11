@@ -67,16 +67,15 @@ I don't usually ask for feedback because by the time I finish a visualization, I
 
 And then I posted it on the [Severance subreddit](https://www.reddit.com/r/SeveranceAppleTVPlus/), where the lawful reddit police called out that Dylan did wake up as an Outie during the Overtime Contingency protocol. I checked the data, and again, they were right. I fell into the trap of rounding, but that 14 sec had to get justice. They also pointed out that my Futura font does not match the style of the show, so I changed it to SF Pro, which I believe is closer to the original Severance typeface.
 
-<div class="image-gallery">
-  <figure>
-    <img src="/images/blog/please-enjoy-each-fact-equally/viz-before-feedback.png" alt="The Severance visualization before receiving feedback" />
-    <figcaption>The viz before receiving feedback</figcaption>
-  </figure>
-  <figure>
-    <img src="/images/blog/please-enjoy-each-fact-equally/final-viz.png" alt="The Severance visualization after feedback" />
-    <figcaption>The viz after feedback</figcaption>
-  </figure>
-</div>
+<figure>
+  <img src="/images/blog/please-enjoy-each-fact-equally/viz-before-feedback.png" alt="The Severance visualization before receiving feedback" />
+  <figcaption>The viz before receiving feedback</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/blog/please-enjoy-each-fact-equally/final-viz.png" alt="The Severance visualization after feedback" />
+  <figcaption>The viz after feedback</figcaption>
+</figure>
 
 If you still don't feel convinced to watch the show, here's the single best moment of recent television history:
 
